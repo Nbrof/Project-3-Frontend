@@ -32,21 +32,21 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 ## TimeFrames
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Information Research | M | 3hrs|| 
-| Structure Planning | M | 2hrs|| 
-| Additional Libraries research| M | 2hrs|| 
-| Basic App/Component Structuring| H | 3hrs| | 
-| Component building| H | 3hrs| | 
-| Router Structuring | L | 2hrs| | 
-| Database basic Integration | H | 2hrs| 
-| CRUD Integration| H | 3hrs|| 
-| Advanced Component Structuring| M | 2hrs| |  
-| Reponsive Design| H | 3hrs| | 
-| Basic App Styling| M | 2hrs| | 
-| Component Styling| M | 2hrs| | 
-| Bug Fixes | H | 2.5hrs| | 
-| Total Frontend | H | 31.5hrs|  |  
+| --- | :---: |  :---: | :---: |
+| Information Research | M | 3hrs|-| 
+| Structure Planning | M | 2hrs|-| 
+| Additional Libraries research| M | 2hrs|-| 
+| Basic App/Component Structuring| H | 3hrs|-| 
+| Component building| H | 3hrs|-|  
+| Router Structuring | L | 2hrs|-|  
+| Database basic Integration | H | 2hrs|-| 
+| CRUD Integration| H | 3hrs|-| 
+| Advanced Component Structuring| M | 2hrs|-|   
+| Reponsive Design| H | 3hrs|-| 
+| Basic App Styling| M | 2hrs|-| 
+| Component Styling| M | 2hrs|-| 
+| Bug Fixes | H | 2.5hrs|-| 
+| Total Frontend | H | 31.5hrs|-|  
 
 | Total | H | 51.5hrs|  | 
 

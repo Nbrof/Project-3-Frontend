@@ -25,11 +25,7 @@ This schedule will be used to keep track of your progress throughout the week an
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [Mobile](https://i.imgur.com/dcevV0B.jpeg)
-- [Tablet](https://imgur.com/JtTsJ8w)
-- [Desktop](https://i.imgur.com/Mr4Cdr7.jpg) 
-- [Time Matrix](https://i.imgur.com/AUKG8Ad.jpg) 
-- [React Architecture](https://i.imgur.com/T9mDp7F.jpg)
+
 
 
 

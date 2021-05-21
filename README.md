@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Links
+!!All Primary Documentation is on the Project Notion link bellow!!
 
-## Available Scripts
 
-In the project directory, you can run:
+- [Project Notion](https://www.notion.so/FRIZZY-Inc-39ef0fa68a7747da86cc497b05a13d33)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+An webpage that is capable of rendering various XKDC comics across itself. User's will be able to input a number which will grab the XKDC comic in quiestion. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Project Schedule
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wireframes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Mobile](https://i.imgur.com/dcevV0B.jpeg)
+- [Tablet](https://imgur.com/JtTsJ8w)
+- [Desktop](https://i.imgur.com/Mr4Cdr7.jpg) 
+- [Time Matrix](https://i.imgur.com/AUKG8Ad.jpg) 
+- [React Architecture](https://i.imgur.com/T9mDp7F.jpg)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## TimeFrames
 
-### Code Splitting
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Information Research | M | 3hrs|| 
+| Structure Planning | M | 2hrs|| 
+| Additional Libraries research| M | 2hrs|| 
+| Basic App/Component Structuring| H | 3hrs| | 
+| Component building| H | 3hrs| | 
+| Router Structuring | L | 2hrs| | 
+| Database basic Integration | H | 2hrs| 
+| CRUD Integration| H | 3hrs|| 
+| Advanced Component Structuring| M | 2hrs| |  
+| Reponsive Design| H | 3hrs| | 
+| Basic App Styling| M | 2hrs| | 
+| Component Styling| M | 2hrs| | 
+| Bug Fixes | H | 2.5hrs| | 
+| Total Frontend | H | 31.5hrs|  |  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Total | H | 51.5hrs|  | 
 
-### Analyzing the Bundle Size
+## Additional Libraries
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Code Snippet
 
-### Advanced Configuration
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Issues and Resolutions
+ Use this section to list of all major issues encountered and their resolution.
 
-### `npm run build` fails to minify
+#### 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+

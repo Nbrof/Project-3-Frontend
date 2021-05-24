@@ -13,10 +13,10 @@ const Display = (props) => {
 
                 <p>{icecream.name}</p>
                 <p>{icecream.type}</p>
-                <p>{icecream.dairy}</p>
-                <p>{icecream.toppings}</p>
+                <p>{icecream.dairy.toString()}</p>
+                <p>{icecream.toppings.toString()}</p>
                 <p>{icecream.description}</p>
-                <p>{icecream.img}</p>
+                <img src={icecream.img} alt={icecream.type}/>
                 <p>{icecream.price}</p>
                 <p>{icecream.rating}</p>
 

@@ -7,19 +7,19 @@ const Footer = (props) => {
   return (
     <nav>
       <Link to='/menu'>
-        <FontAwesomeIcon icon='th-large'/>
+        <FontAwesomeIcon icon='th-large' size='lg'/>
         <p>Menu</p>
       </Link>
       <Link to='/home'>
-        <FontAwesomeIcon icon='home'/>
+        <FontAwesomeIcon icon='home' size='lg'/>
         <p>Home</p>
       </Link>
       <Link to='/profile'>
-        <FontAwesomeIcon icon='user'/>
+        <FontAwesomeIcon icon='user' size='lg'/>
         <p>Profile</p>
       </Link>
       <Link to='/more'>
-        <FontAwesomeIcon icon='bars'/>
+        <FontAwesomeIcon icon='bars' size='lg'/>
         <p>More</p>
       </Link>
     </nav>

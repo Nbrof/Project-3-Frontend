@@ -16,8 +16,6 @@ const handleChange = (event) => {
 
 return (
     <form onSubmit={handleSubmit}>
-
-
         <input
             placeholder="name"
             type="text"

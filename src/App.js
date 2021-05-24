@@ -3,6 +3,13 @@ import "./App.css";
 import { Route, Link, Switch } from "react-router-dom";
 import Form from "./Form";
 import Display from "./Display";
+import Footer from "./components/Footer"
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+
+library.add(fas, far)
 
 function App() {
   const url = "http://localhost:4000";
@@ -116,6 +123,7 @@ function App() {
           />
         </Switch>
       </main>
+      <Footer/>
     </div>
   );
 }

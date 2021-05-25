@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 
 
@@ -44,7 +45,10 @@ return (
             onChange={handleChange}
         />
 
-    <input type="submit" value={props.label} />
+    {/* <input type="submit" value={props.label} /> */}
+    <button className='links'>
+    <Link to={'/home'}>Signup</Link>
+    </button>
 
     </form>
 )

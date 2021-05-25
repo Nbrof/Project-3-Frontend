@@ -97,6 +97,7 @@ const Pages = (props) => {
               />
             )}
           />
+
         </Switch>
       </main>
     </div>

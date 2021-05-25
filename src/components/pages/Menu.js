@@ -11,6 +11,7 @@ const Menu = (props) => {
   
     <div className='menu-btns'>
     <div className='red-box'></div>
+    
     <Link to={'/menu'}>
     <img className='icecreams-button' src='https://res.cloudinary.com/dejg3dz16/image/upload/v1621962157/scale_ksqcjj.jpg' alt='ice creams' />
     <button className='icecream-btn'>Cream</button>

@@ -3,6 +3,8 @@ import "./App.css";
 import { Route, Link, Switch } from "react-router-dom";
 import Form from "./Form";
 import Display from "./Display";
+import Signup from "./forms/Signup"
+import Login from "./forms/Login"
 import Footer from "./components/Footer"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -27,7 +29,21 @@ function App() {
     rating: "",
   };
 
+  const emptyLogin = {
+    email: "",
+    pass: "",
+  }
+
+  const emptySignup = {
+    name: "",
+    pass: "",
+    email: "",
+    address: "",
+  }
+
   const [selectedIceCream, setSelectedIceCream] = React.useState(emptyIceCream);
+  const [selectedLogin, setSelectedLogin] = React.useState(emptyLogin);
+  const [selectedSignup, setSelectedSignup] = React.useState(emptySignup);
 
   const getIceCream = () => {
     fetch(url + "/icecream/")
@@ -36,6 +52,8 @@ function App() {
         setIceCreams(data);
       });
   };
+
+
 
   React.useEffect(() => {
     getIceCream();
@@ -51,6 +69,8 @@ function App() {
     }).then(() => getIceCream(2));
   };
 
+
+
   const handleUpdate = (icecream) => {
     fetch(url + "/icecream/" + icecream._id, {
       method: "PUT",
@@ -63,6 +83,14 @@ function App() {
 
   const selectIceCream = (icecream) => {
     setSelectedIceCream(icecream);
+  };
+
+  const selectLogin = (login) => {
+    setSelectedLogin(login);
+  };
+
+  const selectSignup = (signup) => {
+    setSelectedSignup(signup);
   };
 
   const deleteIceCream = (icecream) => {
@@ -121,6 +149,41 @@ function App() {
               />
             )}
           />
+
+
+            <Route 
+              exact
+              path="/"
+              render={(rp) => (
+                <Signup 
+                  {...rp}
+                  label="signup"
+                  signup={emptySignup}
+                  handleSubmit={handleCreate}
+
+                />
+              )}
+            />
+
+
+            <Route 
+              exact
+              path="/home"
+              render={(rp) => (
+                <Login 
+                  {...rp}
+                  label="login"
+                  login={emptyLogin}
+                  handleSubmit={handleUpdate}
+                  
+                />
+              )}
+            />
+
+
+
+
+
         </Switch>
       </main>
       <Footer/>

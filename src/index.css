@@ -13,16 +13,10 @@ code {
 }
 
 .comp-btns {
-<<<<<<< HEAD
+
 display: flex;
 justify-content:space-evenly;
 margin-top: 250px;
-
-=======
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 250px;
->>>>>>> eb3e11c2a2b640c30532f1261a11899fb8970d95
 }
 
 .home-btn {

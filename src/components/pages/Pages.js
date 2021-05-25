@@ -4,6 +4,7 @@ import About from './page/About'
 import Home from './page/Home'
 import Menu from './page/Menu'
 import More from './page/More'
+import Offer from './page/Offer'
 import Order from './page/Order'
 import Product from './page/Product'
 import ProductInfo from './page/ProductInfo'
@@ -47,6 +48,15 @@ const Pages = (props) => {
             path="/productinfo"
             render={(rp) => (
               <ProductInfo 
+                {...rp}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/offer"
+            render={(rp) => (
+              <Offer 
                 {...rp}
               />
             )}

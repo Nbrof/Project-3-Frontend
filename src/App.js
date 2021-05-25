@@ -242,10 +242,7 @@ function App() {
             path="/products/:product"
             render={(rp) => (
               <div>
-                <ProductInfo 
-                  {...rp} 
-                  iceCream={iceCream}
-                />
+                <ProductInfo {...rp} />
                 <Footer />
               </div>
             )} />

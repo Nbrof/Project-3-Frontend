@@ -15,7 +15,7 @@ import Offer from "./components/pages/Offer";
 import Order from "./components/pages/Order";
 import Product from "./components/pages/Product";
 import ProductInfo from "./components/pages/ProductInfo";
-import Profile from "./components/pages/Product";
+import Profile from "./components/pages/Profile";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";

@@ -17,9 +17,34 @@ code {
 .comp-btns {
 display: flex;
 justify-content:space-evenly;
+margin-top: 250px;
 }
 
 
+.home-btn {
+  color: red;
+  font-size: 40px;
+}
+
+.menu-btn {
+  color: white;
+}
+
+.offer-btn {
+  color: white;
+}
+
+.profile-btn {
+  color: white;
+}
+
+.more-btn {
+  color: white;
+}
+
+p {
+  color: white;
+}
 
 .signup-form {
   display: flex;

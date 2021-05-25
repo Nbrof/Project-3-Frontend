@@ -5,67 +5,34 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = (props) => {
   return (
-    <>
+   
     <nav>
-<<<<<<< HEAD
       <div className='comp-btns'>
-      <Link to='/menu'>
-        <FontAwesomeIcon icon='th-large' size='lg'/>
-        <p>Menu</p>
-      </Link>
-      
-      <Link to='/more'>
-        <FontAwesomeIcon icon='bars' size='lg'/>
-        <p>More</p>
-      </Link>
-
-      <Link to='/home'>
-        <FontAwesomeIcon icon='home' size='lg'/>
-        <p>Home</p>
-      </Link>
-
-      <Link to='/profile'>
-        <FontAwesomeIcon icon='user' size='lg'/>
-        <p>Profile</p>
-      </Link>
-
-      
-      </div>
-
-
-      
-
-      
-      
-     
-    </nav>
-    </>
-  )
-}
-=======
       <Link to="/menu">
-        <FontAwesomeIcon icon="th-large" size="lg" />
+        <FontAwesomeIcon className='menu-btn' icon="th-large" size="lg" />
         <p>Menu</p>
       </Link>
       <Link to="/offer">
-        <FontAwesomeIcon icon="ice-cream" size="lg" />
+        <FontAwesomeIcon className='offer-btn'icon="ice-cream" size="lg" />
         <p>Offer</p>
       </Link>
       <Link to="/home">
-        <FontAwesomeIcon icon="home" size="lg" />
-        <p>Home</p>
+        <FontAwesomeIcon className='home-btn'icon="home" size="lg" />
+        {/* <p>Home</p> */}
       </Link>
       <Link to="/profile">
-        <FontAwesomeIcon icon="user" size="lg" />
+        <FontAwesomeIcon className='profile-btn' icon="user" size="lg" />
         <p>Profile</p>
       </Link>
       <Link to="/more">
-        <FontAwesomeIcon icon="bars" size="lg" />
+        <FontAwesomeIcon className='more-btn' icon="bars" size="lg" />
         <p>More</p>
       </Link>
+      </div>
     </nav>
+
   );
 };
->>>>>>> e4f5101578d66ed38d8fc59d4046193ff8a10091
+
 
 export default Footer;

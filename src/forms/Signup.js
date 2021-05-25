@@ -9,7 +9,7 @@ const [signupData, setSignupData] = React.useState(props.signup)
 const handleSubmit = (event) => {
     event.preventDefault();
     props.handleSubmit(signupData);
-    props.history.push("/");
+    props.history.push("/home");
 };
 
 const handleChange = (event) => {

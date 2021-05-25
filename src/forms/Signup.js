@@ -1,79 +1,61 @@
 import React from "react";
-import { Link } from "react-router-dom"
-
-
+import { Link } from "react-router-dom";
 
 const Signup = (props) => {
-const [signupData, setSignupData] = React.useState(props.signup)
+  const [signupData, setSignupData] = React.useState(props.signup);
 
-const handleSubmit = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     props.handleSubmit(signupData);
     props.history.push("/home");
-};
+  };
 
-const handleChange = (event) => {
-    setSignupData({ ...signupData, [event.target.name]: event.target.value});
-};
+  const handleChange = (event) => {
+    setSignupData({ ...signupData, [event.target.name]: event.target.value });
+  };
 
-
-
-return (
+  return (
     <>
-    <h2>Sign Up!</h2>
-    <div className='signup'>
-    <form onSubmit={handleSubmit} className='signup-form'>
-
-        <input
+      <h2 className="neon-text">Sign Up!</h2>
+      <div className="signup">
+        <form onSubmit={handleSubmit} className="signup-form">
+          <input
+            className="form-name"
             placeholder="name"
             type="text"
             name="name"
             value={signupData.name}
             onChange={handleChange}
-        />
+          />
 
-        <input
+          <input
+            className="form-pass"
             placeholder="password"
             type="text"
             name="pass"
             value={signupData.pass}
             onChange={handleChange}
-        />
+          />
 
-        <input
+          <input
+            className="form-email"
             placeholder="email"
             type="text"
             name="email"
             value={signupData.email}
             onChange={handleChange}
-        />
+          />
 
-    {/* <input type="submit" value={props.label} /> */}
-    <div className='login-btn'>
-    <button className='signup-btn'>
-    <Link to={'/home'}>Signup</Link>
-    </button>
-    </div>
-
-    </form>
-    </div>
+          {/* <input type="submit" value={props.label} /> */}
+          <div>
+            <Link to={"/home"}>
+              <button className="signup-btn">Signup</button>
+            </Link>
+          </div>
+        </form>
+      </div>
     </>
-)
+  );
+};
 
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-export default Signup
+export default Signup;

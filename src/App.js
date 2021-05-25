@@ -111,7 +111,7 @@ function App() {
 
       <main>
         <Switch>
-          <Route
+          {/* <Route
             exact
             path="/"
             render={(rp) => (
@@ -122,7 +122,7 @@ function App() {
                 deleteIceCream={deleteIceCream}
               />
             )}
-          />
+          /> */}
 
           <Route
             exact

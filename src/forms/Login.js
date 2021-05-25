@@ -37,7 +37,7 @@ return (
 
     {/* <input type="submit" value={props.label} /> */}
     <button className='links'>
-    <Link to={'/home'}>Login</Link>
+    <Link to={'/menu'}>Login</Link>
     </button>
 
     </form>

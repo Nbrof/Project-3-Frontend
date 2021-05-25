@@ -48,9 +48,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 250px;
-<<<<<<< HEAD
-
-=======
   border: 2px solid #e74d4b;
   border-radius: 5%;
   position: relative;
@@ -78,7 +75,6 @@ p {
 }
 .form-email:focus {
   outline: none;
->>>>>>> f597ffe7dee512b041eb4785b94e6e54844e1a1d
 }
 
 .login-form {

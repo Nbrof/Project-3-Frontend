@@ -12,6 +12,15 @@ code {
     monospace;
 }
 
+
+
+.comp-btns {
+display: flex;
+justify-content:space-evenly;
+}
+
+
+
 .signup-form {
   display: flex;
   flex-direction: column;
@@ -89,6 +98,10 @@ h2 {
   body {
     background-position: -170px -220px;
   }
+
+
+
+
 
 
 }

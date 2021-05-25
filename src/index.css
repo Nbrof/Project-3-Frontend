@@ -28,7 +28,7 @@ code {
 .signup {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .login {
@@ -39,6 +39,7 @@ code {
 
 input { 
 margin: 5px;
+
 }
 
 .signup-btn {
@@ -67,4 +68,8 @@ body {
   margin-top: 180px;
 }
 
-
+h2 {
+  color: white;
+ 
+ 
+}

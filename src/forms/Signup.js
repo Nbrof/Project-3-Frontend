@@ -19,6 +19,8 @@ const handleChange = (event) => {
 
 
 return (
+    <>
+    <h2>Sign Up!</h2>
     <div className='signup'>
     <form onSubmit={handleSubmit} className='signup-form'>
 
@@ -55,6 +57,7 @@ return (
 
     </form>
     </div>
+    </>
 )
 
 

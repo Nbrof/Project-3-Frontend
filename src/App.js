@@ -26,7 +26,9 @@ library.add(fas, far);
 function App() {
   const url = "http://localhost:4000";
 
-  const [icecreams, setIceCreams] = React.useState([]);
+  const [iceCreams, setIceCreams] = React.useState([]);
+  const [iceCreamsArr, setIceCreamsArr] = React.useState([])
+  const [iceCream, setIceCream] = React.useState({})
 
   const emptyIceCream = {
     name: "",
@@ -60,12 +62,22 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setIceCreams(data);
+        setIceCreamsArr(data);
       });
   };
 
   React.useEffect(() => {
     getIceCream();
   }, []);
+
+  const handleFilter = (arr, filter) => {
+    const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() === filter)
+    setIceCreams(iceCreamsFilter)
+  }
+
+  const handleClick = (item) => {
+    setIceCream(item)
+  }
 
   const handleCreate = (newIceCream) => {
     fetch(url + "/icecream", {
@@ -204,25 +216,36 @@ function App() {
             path="/menu" 
             render={(rp) => (
               <div>
-                <Menu {...rp} />
+                <Menu 
+                  {...rp} 
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
                 <Footer />
               </div>
             )} />
           <Route 
             exact 
-            path="/product" 
+            path="/products" 
             render={(rp) => (
               <div>
-                <Product {...rp} />
+                <Product 
+                  {...rp} 
+                  iceCreams={iceCreams}
+                  handleClick={handleClick}
+                />
                 <Footer />
               </div>
             )} />
           <Route
             exact
-            path="/productinfo"
+            path="/products/:product"
             render={(rp) => (
               <div>
-                <ProductInfo {...rp} />
+                <ProductInfo 
+                  {...rp} 
+                  iceCream={iceCream}
+                />
                 <Footer />
               </div>
             )} />

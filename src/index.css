@@ -18,6 +18,7 @@ code {
 display: flex;
 justify-content:space-evenly;
 margin-top: 250px;
+
 }
 
 
@@ -44,7 +45,6 @@ margin-top: 250px;
 
 p {
   color: white;
-  text-decoration: antiquewhite;
 }
 
 .signup-form {
@@ -106,6 +106,8 @@ body {
 h2 {
   color: white;
 }
+
+
 
 /* TABLET */
 @media screen and (min-width: 768px) {

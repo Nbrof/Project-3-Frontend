@@ -1,0 +1,117 @@
+.menu-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-right: -50px;
+}
+
+.icecreams-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px 100px;
+    display: inline-block;
+    position:absolute;
+    left:2px;
+}
+
+.floats-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px 100px;
+    display: inline-block;
+    position:absolute;
+    left:2px;
+}
+
+.offer-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px 100px;
+    display: inline-block;
+    position:absolute;
+    left:2px;
+    
+    
+}
+
+
+div {
+    background: black;
+}
+
+html {
+    background: black;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: end;
+    margin-left: 15px;
+}
+
+.icecream-btn {
+ height: 65px;
+ width: 300px;
+ background: white;
+ border: none;
+ margin-top: 20px;
+ border-top-left-radius: 15px;
+ border-bottom-left-radius: 15px;
+}
+
+.floats-btn {
+ height: 65px;
+ width: 300px;
+ background: white;
+ border: none;
+ margin-top: 20px;
+ border-top-left-radius: 15px;
+ border-bottom-left-radius: 15px;
+}
+
+.offer-btn2 {
+height: 65px;
+width: 300px;
+background: white; 
+border: none;
+margin-top: 20px;
+/* margin-right: 120px; */
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+/* background-image: linear-gradient(to bottom, white, #f34747); */
+}
+
+
+img {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.red-box {
+    width: 90px;
+    height: 280px;
+    background: red;
+    display: inline-block;
+    position:absolute;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.button5 {
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    display: inline-block;
+    position:absolute;
+    margin-left: -15px;
+    margin-top: 40px;
+    color: red;
+    
+}
+
+.comp-btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 65px;
+}

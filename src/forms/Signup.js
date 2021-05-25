@@ -19,7 +19,8 @@ const handleChange = (event) => {
 
 
 return (
-    <form onSubmit={handleSubmit}>
+    <div className='signup'>
+    <form onSubmit={handleSubmit} className='signup-form'>
 
         <input
             placeholder="name"
@@ -32,7 +33,7 @@ return (
         <input
             placeholder="password"
             type="text"
-            name="password"
+            name="pass"
             value={signupData.pass}
             onChange={handleChange}
         />
@@ -46,11 +47,14 @@ return (
         />
 
     {/* <input type="submit" value={props.label} /> */}
-    <button className='links'>
+    <div className='login-btn'>
+    <button className='signup-btn'>
     <Link to={'/home'}>Signup</Link>
     </button>
+    </div>
 
     </form>
+    </div>
 )
 
 

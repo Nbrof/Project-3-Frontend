@@ -103,7 +103,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="frizzy-logo">FRIZZY</h1>
+
+    {/* <img src='https://res.cloudinary.com/dejg3dz16/image/upload/v1621912001/Screen_Shot_2021-05-24_at_9.59.14_PM_ta2eju.png' alt='frizz background' /> */}
+
+    
+      
+      {/* <h1 className="frizzy-logo">FRIZZY</h1> */}
 
       <Link to="create">
         <button className="create">Add Ice Cream</button>

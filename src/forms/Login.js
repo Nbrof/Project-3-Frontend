@@ -17,7 +17,8 @@ const handleChange = (event) => {
 
 
 return (
-    <form onSubmit={handleSubmit}>
+    <div className='login'>
+    <form onSubmit={handleSubmit} className='login-form'>
 
         <input
             placeholder="email"
@@ -36,11 +37,14 @@ return (
         />
 
     {/* <input type="submit" value={props.label} /> */}
-    <button className='links'>
+    <div className='login-btn'>
+    <button>
     <Link to={'/menu'}>Login</Link>
     </button>
+    </div>
 
     </form>
+    </div>
 )
 
 

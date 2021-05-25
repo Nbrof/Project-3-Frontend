@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+ 
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+input { 
+margin: 5px;
+}
+
+.signup-btn {
+  width: 75px;
+}
+
+.login-btn {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 75px;
+}
+
+
+
+body {
+  background: black;
+  background-image: url("https://res.cloudinary.com/dejg3dz16/image/upload/v1621912001/Screen_Shot_2021-05-24_at_9.59.14_PM_ta2eju.png");
+  background-attachment: fixed;
+  background-position: -480px -220px;
+  /* background-repeat: no-repeat; */
+  
+}
+
+.create {
+  margin-top: 180px;
+}
+
+

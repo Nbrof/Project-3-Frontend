@@ -42,6 +42,18 @@ const Login = (props) => {
           </Link>
         </div>
       </form>
+      <div className="">
+        <p>Forgot your password?</p>
+        <p>or</p>
+        <p>Login With</p>
+      </div>
+      <div>
+          <button>Login with Facebook</button>
+        <button>Login with Google</button>
+      </div>
+      <p>
+        Don't have an account? <span>Sign </span>
+      </p>
     </div>
   );
 };

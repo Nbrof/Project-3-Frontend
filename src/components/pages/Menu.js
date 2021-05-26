@@ -5,6 +5,7 @@ import "./css/Menu.css";
 const Menu = (props) => {
   return (
     <>
+
       <p className="menu-header">Menu Page</p>
 
       <div className="menu-btns">
@@ -40,6 +41,7 @@ const Menu = (props) => {
           <button class="button button5">&#62;</button>
         </Link>
       </div>
+
     </>
   );
 };

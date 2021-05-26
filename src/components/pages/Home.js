@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Home = (props) => {
   return (
-<<<<<<< HEAD
+
     <>
   < img className='bw-bg' src='https://res.cloudinary.com/dejg3dz16/image/upload/v1622003751/icecream_bg_pljiay.jpg' />
 
@@ -22,11 +22,7 @@ const Home = (props) => {
 
         </div>
   </>
-=======
-    <div className='home'>
-      <h1 className='neon-text'>Home Page</h1>
-    </div>
->>>>>>> fd3c6060dd0ebc17a71cefc7a77a6903fb420353
+
   )
 }
 

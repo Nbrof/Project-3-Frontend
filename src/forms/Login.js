@@ -17,6 +17,7 @@ const Login = (props) => {
   return (
     <>
       <h2 className="neon-text">Log In!</h2>
+      <p className="login-details">Add your login details</p>
       <div className="login">
         <form onSubmit={handleSubmit} className="login-form">
           <input
@@ -36,8 +37,6 @@ const Login = (props) => {
             value={loginData.pass}
             onChange={handleChange}
           />
-
-
         {/* <input type="submit" value={props.label} /> */}
         <div>
           <Link to={"/menu"}>
@@ -45,25 +44,20 @@ const Login = (props) => {
           </Link>
         </div>
       </form>
-      <div>
+      <div className="middle-text">
         <p>Forgot your password?</p>
         <p>or</p>
         <p>Login With</p>
       </div>
-      <div>
-          <button>Login with Facebook</button>
-        <button>Login with Google</button>
+      <div className="other-logins">
+          <button className="login-facebook">Login with Facebook</button>
+        <button className="login-goole">Login with Google</button>
       </div>
-      <p>
-        Don't have an account? <span>Sign </span>
+      <p className="no-account">
+        Don't have an account? <span className="red-text">Sign </span>
       </p>
     </div>
           {/* <input type="submit" value={props.label} /> */}
-          <div>
-            <Link to={"/menu"}>
-              <button className="login-btn">Login</button>
-            </Link>
-          </div>
     </>
   );
 };

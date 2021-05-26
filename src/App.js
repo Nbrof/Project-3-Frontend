@@ -13,7 +13,7 @@ import Menu from "./components/pages/Menu";
 import More from "./components/pages/More";
 import Offer from "./components/pages/Offer";
 import Order from "./components/pages/Order";
-import Product from "./components/pages/Product";
+import Products from "./components/pages/Products";
 import ProductInfo from "./components/pages/ProductInfo";
 import Profile from "./components/pages/Profile";
 
@@ -236,7 +236,7 @@ function App() {
             path="/products" 
             render={(rp) => (
               <div>
-                <Product 
+                <Products
                   {...rp} 
                   iceCreams={iceCreams}
                   handleClick={handleClick}

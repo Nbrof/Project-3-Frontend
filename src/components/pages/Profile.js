@@ -1,7 +1,11 @@
 import React from 'react'
 
 const Profile = (props) => {
-  return <h1>Profile Page</h1>
+  return (
+    <div className='profile'>
+      <h1 className='neon-text'>Profile Page</h1>
+    </div>
+  )
 }
 
 export default Profile

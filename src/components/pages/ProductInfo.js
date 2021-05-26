@@ -19,6 +19,7 @@ const ProductInfo = (props) => {
   const loaded = () => {
     return (
       <div className="product-info">
+        <h1 className='neon-text'>Product Info</h1>
         <img src={iceCream.img} alt={iceCream.name} />
         <h3>{iceCream.name}</h3>
       </div>

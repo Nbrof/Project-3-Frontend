@@ -7,9 +7,9 @@ const Menu = (props) => {
   const {iceCreams, handleFilter} = props
 
   return (
-    <>
+    <div className='menu'>
 
-      <p className="menu-header">Menu Page</p>
+      <h1 className="menu-header neon-text">Menu Page</h1>
 
       <div className="menu-btns">
         <div className="red-box"></div>
@@ -50,8 +50,7 @@ const Menu = (props) => {
           <button class="button button5">&#62;</button>
         </Link>
       </div>
-
-    </>
+    </div>
   );
 };
 

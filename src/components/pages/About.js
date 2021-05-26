@@ -3,8 +3,11 @@ import "./css/About.css";
 
 const About = (props) => {
   return (
+    <>
     <div className='about'>
-      <h1 className='neon-text'>About Page</h1>
+    <h1 className='neon-text'>About Page</h1>
+
+    
       <div className="team-img">
         <div class="container">
           <div class="image">
@@ -68,16 +71,9 @@ const About = (props) => {
           </div>
         </div>
 
-        {/* <img className='chun' src='https://res.cloudinary.com/dejg3dz16/image/upload/v1621977053/Chun_jctgkb.jpg' alt='Chun'/>
-  <p className='txt chun-text'>This is Chun</p>
-
-  <img className='gabe' src='https://res.cloudinary.com/dejg3dz16/image/upload/v1621977051/gabe_dz4xup.jpg' alt='Gabe'/>
-  <p className='txt gabe-text'>This is Gabe</p>
-
-  <img className='nikolaus' src='https://res.cloudinary.com/dejg3dz16/image/upload/v1621977052/Nikolaus_zpbdip.jpg' alt='Nikolaus'/>
-  <p className='txt nikolaus-text'>This is Nikolaus</p> */}
       </div>
     </div>
+    </>
   );
 };
 

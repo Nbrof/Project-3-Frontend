@@ -12,7 +12,9 @@
   border-radius: 15px 100px;
   display: inline-block;
   position: absolute;
-  left: 2px;
+  left: 20px;
+  margin-top: 20px;
+  
 }
 
 .floats-button {
@@ -21,7 +23,8 @@
   border-radius: 15px 100px;
   display: inline-block;
   position: absolute;
-  left: 2px;
+  left: 20px;
+  margin-top: 20px;
 }
 
 .offer-button {
@@ -30,7 +33,8 @@
   border-radius: 15px 100px;
   display: inline-block;
   position: absolute;
-  left: 2px;
+  left: 20px;
+  margin-top: 20px;
 }
 
 div {

@@ -44,6 +44,21 @@ p {
   color: white;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+.btns {
+  width: 150px;
+  height: 50px;
+  margin: 60vh 10px 0;
+  background-color: #181c20;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
 .signup-form {
   display: flex;
   flex-direction: column;
@@ -104,9 +119,9 @@ p {
 }
 .login-btn {
   width: 100px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  margin-left: 75px;
+  margin-left: 75px; */
   margin-top: 10px;
   background-color: #181c20;
   color: white;
@@ -129,12 +144,12 @@ input {
 }
 
 .signup-btn {
-  width: 75px;
+  width: 100px;
   margin-top: 10px;
   background-color: #181c20;
   color: white;
-
 }
+
 .neon-text {
     color: #fff;
     text-shadow:

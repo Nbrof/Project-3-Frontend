@@ -71,8 +71,15 @@ function App() {
   }, []);
 
   const handleFilter = (arr, filter) => {
-    const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() === filter)
-    setIceCreams(iceCreamsFilter)
+    if (filter === "all") {
+      setIceCreams(iceCreamsArr)
+    } else if (filter === "ice cream") {
+      const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() !== "float")
+      setIceCreams(iceCreamsFilter)
+    } else {
+      const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() === filter)
+      setIceCreams(iceCreamsFilter)
+    }
   }
 
   const handleClick = (item) => {
@@ -137,10 +144,10 @@ function App() {
             render={(rp) => (
               <div>
                 <Link to="signup">
-                  <button>Sign Up</button>
+                  <button className="btns">Sign Up</button>
                 </Link>
                 <Link to="login">
-                  <button>Log In</button>
+                  <button className="btns">Log In</button>
                 </Link>
               </div>
               // <Display

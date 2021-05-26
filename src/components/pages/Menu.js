@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "./css/Menu.css";
 
 const Menu = (props) => {
+
+  const {iceCreams, handleFilter} = props
+
   return (
     <>
 
@@ -11,7 +14,10 @@ const Menu = (props) => {
       <div className="menu-btns">
         <div className="red-box"></div>
 
-        <Link to={"/productinfo"}>
+        <Link 
+          to={"/products"}
+          onClick={() => handleFilter(iceCreams, "all")}
+        >
           <img
             className="icecreams-button"
             src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621962157/scale_ksqcjj.jpg"
@@ -21,7 +27,10 @@ const Menu = (props) => {
           <button class="button button5">&#62;</button>
         </Link>
 
-        <Link to={"/productinfo"}>
+        <Link 
+          to={"/products"}
+          onClick={() => handleFilter(iceCreams, "float")}
+        >
           <img
             className="floats-button"
             src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621963185/4be670890df07c2cba3d457fb162edb1--soda-drink-strawberry-ice-cream-cake_q4luze.jpg"

@@ -15,8 +15,8 @@ const Profile = (props) => {
       return (
         <div className='profile'>
           <Link 
-            to={`/profile/`}
-            onClick={() => handleClick(profile)}>
+            to={`/profile`}
+            onClick={() => handleClick(signup)}>
             <p>{signup.name}</p>
             <p>{signup.email}</p>
             <p>{signup.address}</p>
@@ -40,14 +40,14 @@ const Profile = (props) => {
 
         </div>
       )
-    }) 
+    }
 
-    return (
-      <div className='signup-pull'>
-        <h1 className='neon-text'>Profile</h1>
-        {profiles}
-      </div>
-    )
+    // return (
+    //   <div className='signup-pull'>
+    //     <h1 className='neon-text'>Profile</h1>
+    //     {profiles}
+    //   </div>
+    // )
   
 
   const loading = () => <h1>Loading...</h1>

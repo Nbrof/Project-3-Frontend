@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = (props) => {
   return (
-   
     <nav>
       <div className='comp-btns'>
       <Link to="/menu">

@@ -1,0 +1,46 @@
+.i-frizz {
+    height: 50px;
+    weight: 50px;
+}
+
+img {
+    margin: -2px;
+}
+
+h4 {
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.home-btns {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 100px;
+}
+
+.login-btn2 {
+width: 300px;
+height: 45px;
+border-radius: 25px;
+color: white;
+background: red;
+}
+
+.signup-btn2 {
+width: 300px;
+height: 45px;
+border-radius: 25px;
+color: white;
+background: black;
+border: 1px solid red;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+.bw-bg {
+    opacity: 0.2;
+}

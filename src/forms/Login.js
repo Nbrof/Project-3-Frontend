@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Login = (props) => {
   const [loginData, setLoginData] = React.useState(props.login);
@@ -16,13 +17,13 @@ const Login = (props) => {
 
   return (
     <>
-      <h2 className="neon-text">Log In!</h2>
+      <h2 className="neon-text">Login</h2>
       <p className="login-details">Add your login details</p>
       <div className="login">
         <form onSubmit={handleSubmit} className="login-form">
           <input
             className="login-email"
-            placeholder="email"
+            placeholder="       Your email"
             type="text"
             name="email"
             value={loginData.email}
@@ -31,7 +32,7 @@ const Login = (props) => {
 
           <input
             className="login-password"
-            placeholder="password"
+            placeholder="       Password"
             type="text"
             name="pass"
             value={loginData.pass}
@@ -44,16 +45,16 @@ const Login = (props) => {
             </Link>
           </div>
           <div className="middle-text">
-            <p>Forgot your password?</p>
-            <p>or</p>
-            <p>Login With</p>
+            <p className="middle-text">Forgot your password?</p>
+            <p className="middle-text">or</p>
+            <p className="middle-text">Login With</p>
           </div>
           <div className="other-logins">
-            <button className="login-facebook">Login with Facebook</button>
-            <button className="login-goole">Login with Google</button>
+            <button className="login-facebook"><FontAwesomeIcon icon={["fab", 'facebook-f']}/> Login with Facebook</button>
+            <button className="login-google"><FontAwesomeIcon icon={["fab", 'google-plus-g']}/> Login with Google</button>
           </div>
           <p className="no-account">
-            Don't have an account? <span className="red-text">Sign </span>
+            Don't have an Account? <a href="./signup"><span className="red-text">Sign Up </span></a>
           </p>
         </form>
       </div>

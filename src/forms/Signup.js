@@ -16,32 +16,57 @@ const Signup = (props) => {
 
   return (
     <>
-      <h2 className="neon-text">Sign Up!</h2>
+      <h2 className="neon-text">Sign Up</h2>
+      <p className="signup-details">Add your details to sign up</p>
       <div className="signup">
         <form onSubmit={handleSubmit} className="signup-form">
           <input
             className="form-name"
-            placeholder="name"
+            placeholder="      Name"
             type="text"
             name="name"
             value={signupData.name}
             onChange={handleChange}
           />
 
-          <input
-            className="form-pass"
-            placeholder="password"
-            type="text"
-            name="pass"
-            value={signupData.pass}
-            onChange={handleChange}
-          />
 
           <input
             className="form-email"
-            placeholder="email"
+            placeholder="      Email"
             type="text"
             name="email"
+            value={signupData.email}
+            onChange={handleChange}
+          />
+          <input
+            className="form-mobile"
+            placeholder="      Mobile No"
+            type="text"
+            name="mobile"
+            value={signupData.pass}
+            onChange={handleChange}
+          />
+          <input
+            className="form-address"
+            placeholder="      Address"
+            type="text"
+            name="address"
+            value={signupData.email}
+            onChange={handleChange}
+          />
+          <input
+            className="form-password"
+            placeholder="      Password"
+            type="text"
+            name="password"
+            value={signupData.email}
+            onChange={handleChange}
+          />
+          <input
+            className="form-confirm-password"
+            placeholder="      Confirm Password"
+            type="text"
+            name="confirm-password"
             value={signupData.email}
             onChange={handleChange}
           />
@@ -52,6 +77,7 @@ const Signup = (props) => {
               <button className="signup-btn">Signup</button>
             </Link>
           </div>
+        <p className="made-account">Already have an Account? <a href="./Login"><span className="red-text">Login</span></a></p>
         </form>
       </div>
     </>

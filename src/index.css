@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,400;0,600;0,700;1,200&display=swap');
+import
 
+html {
+  font-family: "Koho"
+}
 
 * {
   margin: 0;
@@ -11,7 +15,6 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
 .comp-btns {
 display: flex;
 justify-content:space-evenly;
@@ -21,7 +24,7 @@ bottom: 0px
 }
 
 .home-btn {
-  color: red;
+  color: #e84e4c;
   font-size: 40px;
 }
 
@@ -61,75 +64,168 @@ button:hover {
 
 
 .signup-form {
+  height: 500px;
   display: flex;
   flex-direction: column;
   width: 250px;
-  border: 2px solid #e74d4b;
+  /* border: 2px solid #e74d4b; */
   border-radius: 5%;
-  margin-top: 30vh;
-  padding: 25px;
-  box-shadow: 2px 2px 40px 2px #e74d4b;
+  margin-top:25px;
+  padding: 5px;
+  /* box-shadow: 2px 2px 40px 2px #e74d4b; */
+}
+.signup-details {
+  margin-top: 25px;
+  color:#4d5054
 }
 .form-name {
-  background-color: #181c20;
+  background-color: white;
   color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
 }
 .form-name:focus {
   outline: none;
 }
-.form-pass {
-  background-color: #181c20;
+.form-password {
+  background-color: white;
   color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
 }
-.form-pass:focus {
+.form-password:focus {
   outline: none;
 }
 .form-email {
-  background-color: #181c20;
+  background-color: white;
   color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
 }
 .form-email:focus {
   outline: none;
+}
+.form-mobile {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form-mobile:focus {
+  outline: none;
+}
+.form-address {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form-address:focus {
+  outline: none;
+}
+.form-confirm-password {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form--confirm- password:focus {
+  outline: none;
+}
+.made-account {
+  margin-top: 15px;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   width: 500px;
-  border: 2px solid #e74d4b;
+  /* border: 2px solid #e74d4b; */
   border-radius: 5%;
   padding: 25px;
   margin: 20px;
-  box-shadow: 2px 2px 40px 2px #e74d4b;
+  /* box-shadow: 2px 2px 40px 2px #e74d4b; */
 }
 .login-email {
-  background-color: #181c20;
-  color: white;
-  border-radius: 5%;
+  background-color: white;
+  color: #e2e3e4;
+  border-radius: 2.5rem;
+  height: 45px;
+  font-size: 20px;
 }
 .login-email:focus {
   outline: none;
 }
 .login-password {
-  background-color: #181c20;
-  color: white;
-  border-radius: 5%;
+  background-color: white;
+  color: #e2e3e4;
+  border-radius: 2.5rem;
+  height: 45px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 .login-password:focus {
   outline: none;
 }
 .login-btn {
-  width: 100px;
-  margin-top: 10px;
-  background-color: #181c20;
+  width: 300px;
+  margin-top: 20px;
+  background-color: #e84e4c;
   color: white;
-  border-radius: 5%;
+  border-radius: 2.5rem;
+  height: 50px;
+  font-size: 20px;
 }
 .middle-text {
-  margin-top: 50px;
-  line-height: 1.8;
+  margin-top: 20px;
+  line-height: 1.2;
+  color: #4d5054
 }
-
+.other-logins {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.login-facebook {
+  background-color: #3d83c0;
+  color: white;
+  border-radius: 2.5rem;
+  height: 50px;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.login-google {
+  background-color: #f56620;
+  color: white;
+  border-radius: 2.5rem;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.no-account {
+  margin-top: 70px;
+  color: #4d5054;
+  font-size: 18px;
+}
+.red-text {
+ color: #e84e4c;
+ font-weight: 900;
+ text-decoration: none;
+}
 .signup {
   display: flex;
   justify-content: center;
@@ -145,16 +241,23 @@ input {
 }
 
 .signup-btn {
-  width: 100px;
+  width: 240px;
   margin-top: 10px;
-  background-color: #181c20;
+  background-color:#e74d4b;
   color: white;
+  height: 45px;
+  border-radius: 2.5rem;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
 }
 
 .neon-text {
     color: #fff;
-    margin-top:40px;
-    text-shadow:
+    font-size: 40px;
+    margin-top:20px;
+    /* text-shadow:
       0 0 7px #fff,
       0 0 10px #e74d4b,
       0 0 21px #e74d4b,
@@ -162,10 +265,12 @@ input {
       0 0 82px #e74d4b,
       0 0 92px #e74d4b,
       0 0 102px #e74d4b,
-      0 0 151px #e74d4b;
+      0 0 151px #e74d4b; */
   }
   .login-details {
-    margin-top: 15px;
+    margin-top: 10px;
+    color: #4d5054;
+    font-size: 18px;
   }
 
 /* body {

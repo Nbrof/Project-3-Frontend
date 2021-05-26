@@ -1,6 +1,6 @@
 import React from 'react'
 import "./css/Profile.css";
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 
 
@@ -14,6 +14,7 @@ const Profile = (props) => {
 
 
     </>
+
   )
 }
 

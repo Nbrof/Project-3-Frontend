@@ -14,7 +14,7 @@ const About = (props) => {
         <img className='christina' src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621977052/Christina_ka3z92.jpg" />
       </div>
       <div class="text">
-        <p>This is Christina.  Christina's role in this project was the software developer on the frontend.  Creating components and designing the app/website layout.</p>
+        <p>This is Christina.  Christina's role in this project has been the Full-Stack developer on the frontend.  Creating components and designing the app/website layout.</p>
       </div>
     </div>
 
@@ -23,16 +23,16 @@ const About = (props) => {
         <img className='chun' src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621977053/Chun_jctgkb.jpg" />
       </div>
       <div class="text">
-        <p>This is Chun! Chun's role was huge in the frontend, and also had a hand in the backend structure.  Creating routes and component with links to certain pages.</p>
+        <p>This is Chun! Chun's role as a Full-Stack Developer was huge in the frontend, and also had a hand in the backend structure.  Creating routes and component with links to certain pages.</p>
       </div>
     </div>
 
     <div class="container">
       <div class="image">
-        <img className='gabe' src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621977051/gabe_dz4xup.jpg" />
+        <img className='gabe' src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621988860/gabe2_timsed.jpg" />
       </div>
       <div class="text">
-        <p>This is Gabe!  Gabe built models on the backend and has done an amazing job of the frontend styling.</p>
+        <p>This is Gabe!  Gabe built models on the backend and has a role on the frontend styling and components.</p>
       </div>
     </div>
 

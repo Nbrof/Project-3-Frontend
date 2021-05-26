@@ -51,7 +51,14 @@ const Profile = (props) => {
   
 
   const loading = () => <h1>Loading...</h1>
-  return signups.length > 0 ? loaded() : loading()
+  // return signups.length > 0 ? loaded() : loading()
+  return (
+    <div>
+      <h1>profile</h1>
+      <Link to='/'>
+        <button>Log out</button>
+      </Link>
+    </div>)
 }
 
   

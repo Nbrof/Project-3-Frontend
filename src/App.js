@@ -7,6 +7,7 @@ import Signup from "./forms/Signup";
 import Login from "./forms/Login";
 import Footer from "./components/Footer";
 
+import Default from "./components/pages/Default"
 import About from "./components/pages/About";
 import Home from "./components/pages/Home";
 import Menu from "./components/pages/Menu";
@@ -161,14 +162,17 @@ function App() {
             exact
             path="/"
             render={(rp) => (
-              <div>
-                <Link to="signup">
-                  <button className="btns">Sign Up</button>
-                </Link>
-                <Link to="login">
-                  <button className="btns">Log In</button>
-                </Link>
-              </div>
+              // <div>
+              //   <Link to="signup">
+              //     <button className="btns">Sign Up</button>
+              //   </Link>
+              //   <Link to="login">
+              //     <button className="btns">Log In</button>
+              //   </Link>
+              // </div>
+
+              <Default />
+
               // <Display
               //   {...rp}
               //   icecreams={icecreams}
@@ -292,7 +296,7 @@ function App() {
             )} />
           <Route 
             exact 
-            path="/profile/:id" 
+            path="/profile" 
             render={(rp) => (
               <div>
                 <Profile {...rp} />

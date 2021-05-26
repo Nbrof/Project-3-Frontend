@@ -13,7 +13,7 @@ import Menu from "./components/pages/Menu";
 import More from "./components/pages/More";
 import Offer from "./components/pages/Offer";
 import Order from "./components/pages/Order";
-import Product from "./components/pages/Product";
+import Products from "./components/pages/Products";
 import ProductInfo from "./components/pages/ProductInfo";
 import Profile from "./components/pages/Profile";
 
@@ -71,8 +71,15 @@ function App() {
   }, []);
 
   const handleFilter = (arr, filter) => {
-    const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() === filter)
-    setIceCreams(iceCreamsFilter)
+    if (filter === "all") {
+      setIceCreams(iceCreamsArr)
+    } else if (filter === "ice cream") {
+      const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() !== "float")
+      setIceCreams(iceCreamsFilter)
+    } else {
+      const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() === filter)
+      setIceCreams(iceCreamsFilter)
+    }
   }
 
   const handleClick = (item) => {
@@ -123,7 +130,6 @@ function App() {
     <div className="App">
       {/* <img src='https://res.cloudinary.com/dejg3dz16/image/upload/v1621912001/Screen_Shot_2021-05-24_at_9.59.14_PM_ta2eju.png' alt='frizz background' /> */}
 
-      {/* <h1 className="frizzy-logo">FRIZZY</h1> */}
 
       {/* <Link to="create">
         <button className="create">Add Ice Cream</button>
@@ -137,10 +143,10 @@ function App() {
             render={(rp) => (
               <div>
                 <Link to="signup">
-                  <button>Sign Up</button>
+                  <button className="btns">Sign Up</button>
                 </Link>
                 <Link to="login">
-                  <button>Log In</button>
+                  <button className="btns">Log In</button>
                 </Link>
               </div>
               // <Display
@@ -229,7 +235,7 @@ function App() {
             path="/products" 
             render={(rp) => (
               <div>
-                <Product 
+                <Products
                   {...rp} 
                   iceCreams={iceCreams}
                   handleClick={handleClick}

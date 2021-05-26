@@ -20,7 +20,8 @@ const Product = (props) => {
     }) 
 
     return (
-      <div className='ice-cream-list'>
+      <div className='products'>
+        <h1 className='neon-text'>Products</h1>
         {products}
       </div>
     )

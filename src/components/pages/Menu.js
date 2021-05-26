@@ -3,15 +3,21 @@ import { Link } from "react-router-dom";
 import "./css/Menu.css";
 
 const Menu = (props) => {
-  return (
-    <>
 
-      <p className="menu-header">Menu Page</p>
+  const {iceCreams, handleFilter} = props
+
+  return (
+    <div className='menu'>
+
+      <h1 className="menu-header neon-text">Menu Page</h1>
 
       <div className="menu-btns">
         <div className="red-box"></div>
 
-        <Link to={"/menu"}>
+        <Link 
+          to={"/products"}
+          onClick={() => handleFilter(iceCreams, "all")}
+        >
           <img
             className="icecreams-button"
             src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621962157/scale_ksqcjj.jpg"
@@ -21,7 +27,10 @@ const Menu = (props) => {
           <button class="button button5">&#62;</button>
         </Link>
 
-        <Link to={"/menu"}>
+        <Link 
+          to={"/products"}
+          onClick={() => handleFilter(iceCreams, "float")}
+        >
           <img
             className="floats-button"
             src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621963185/4be670890df07c2cba3d457fb162edb1--soda-drink-strawberry-ice-cream-cake_q4luze.jpg"
@@ -41,8 +50,7 @@ const Menu = (props) => {
           <button class="button button5">&#62;</button>
         </Link>
       </div>
-
-    </>
+    </div>
   );
 };
 

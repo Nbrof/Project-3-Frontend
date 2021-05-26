@@ -15,25 +15,28 @@ const Login = (props) => {
   };
 
   return (
-    <div className="login">
-      <form onSubmit={handleSubmit} className="login-form">
-        <input
-          className="login-email"
-          placeholder="email"
-          type="text"
-          name="email"
-          value={loginData.email}
-          onChange={handleChange}
-        />
+    <>
+      <h2 className="neon-text">Log In!</h2>
+      <div className="login">
+        <form onSubmit={handleSubmit} className="login-form">
+          <input
+            className="login-email"
+            placeholder="email"
+            type="text"
+            name="email"
+            value={loginData.email}
+            onChange={handleChange}
+          />
 
-        <input
-          className="login-password"
-          placeholder="password"
-          type="text"
-          name="pass"
-          value={loginData.pass}
-          onChange={handleChange}
-        />
+          <input
+            className="login-password"
+            placeholder="password"
+            type="text"
+            name="pass"
+            value={loginData.pass}
+            onChange={handleChange}
+          />
+
 
         {/* <input type="submit" value={props.label} /> */}
         <div>
@@ -42,7 +45,7 @@ const Login = (props) => {
           </Link>
         </div>
       </form>
-      <div className="">
+      <div>
         <p>Forgot your password?</p>
         <p>or</p>
         <p>Login With</p>
@@ -55,7 +58,14 @@ const Login = (props) => {
         Don't have an account? <span>Sign </span>
       </p>
     </div>
+          {/* <input type="submit" value={props.label} /> */}
+          <div>
+            <Link to={"/menu"}>
+              <button className="login-btn">Login</button>
+            </Link>
+          </div>
+    </>
   );
 };
 
-export default Login;
+export default Login

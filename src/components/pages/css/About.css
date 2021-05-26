@@ -1,45 +1,61 @@
 .christina {
-    height: 130px;
-    width: 85px;
+    height: 115px;
+    width: 80px;
     border: 1px solid white;
+    max-width: 150%;
+    border-radius: 15px;
+    margin-left: 45px;
     
 }
 .chun {
     height: 110px;
-    width: 90px; 
+    width: 120px; 
     border: 1px solid white;
+    max-width: 150%;
+    border-radius: 15px;
+    margin-left: 45px;
 }
 .gabe {
-    height: 110px;
-    width: 95px;
+    height: 105px;
+    width: 80px;
     border: 1px solid white;
+    max-width: 150%;
+    border-radius: 15px;
+    margin-left: 45px;
 }
 .nikolaus {
-    height: 115px;
-    width: 90px;
+    height: 105px;
+    width: 80px;
     border: 1px solid white;
+    max-width: 150%;
+    border-radius: 15px;
+    margin-left: 45px;
 }
 .team-img {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
     
 }
 
 .container {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
-  img {
-    max-width: 150%
-  }
+ 
   .image {
-    flex-basis: 40%
+    flex-basis: 40%;
+    margin-bottom: 50px;
+    
   }
   .text {
     font-size: 12px;
     padding-left: 100px;
     /* border: 1px solid white; */
     background: none;
+    margin-right: 50px;
+    margin-bottom: 75px;
+
 
 }

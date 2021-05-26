@@ -1,15 +1,9 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,400;0,600;0,700;1,200&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+* {
+  margin: 0;
+  font-family: 'KoHo', sans-serif;
 }
 
 .comp-btns {
@@ -49,7 +43,7 @@ button:hover {
 }
 
 .btns {
-  width: 150px;
+  width: 140px;
   height: 50px;
   margin: 60vh 10px 0;
   background-color: #181c20;
@@ -65,8 +59,7 @@ button:hover {
   width: 250px;
   border: 2px solid #e74d4b;
   border-radius: 5%;
-  position: relative;
-  top: 120px;
+  margin-top: 30vh;
   padding: 25px;
   box-shadow: 2px 2px 40px 2px #e74d4b;
 }
@@ -98,9 +91,8 @@ button:hover {
   width: 250px;
   border: 2px solid #e74d4b;
   border-radius: 5%;
-  position: relative;
-  top: 120px;
   padding: 25px;
+  margin-top: 35vh;
   box-shadow: 2px 2px 40px 2px #e74d4b;
 }
 .login-email {
@@ -130,13 +122,11 @@ button:hover {
 .signup {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .login {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 input {

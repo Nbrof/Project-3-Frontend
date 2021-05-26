@@ -15,34 +15,37 @@ const Login = (props) => {
   };
 
   return (
-    <div className="login">
-      <form onSubmit={handleSubmit} className="login-form">
-        <input
-          className="login-email"
-          placeholder="email"
-          type="text"
-          name="email"
-          value={loginData.email}
-          onChange={handleChange}
-        />
+    <>
+      <h2 className="neon-text">Log In!</h2>
+      <div className="login">
+        <form onSubmit={handleSubmit} className="login-form">
+          <input
+            className="login-email"
+            placeholder="email"
+            type="text"
+            name="email"
+            value={loginData.email}
+            onChange={handleChange}
+          />
 
-        <input
-          className="login-password"
-          placeholder="password"
-          type="text"
-          name="pass"
-          value={loginData.pass}
-          onChange={handleChange}
-        />
+          <input
+            className="login-password"
+            placeholder="password"
+            type="text"
+            name="pass"
+            value={loginData.pass}
+            onChange={handleChange}
+          />
 
-        {/* <input type="submit" value={props.label} /> */}
-        <div>
-          <Link to={"/menu"}>
-            <button className="login-btn">Login</button>
-          </Link>
-        </div>
-      </form>
-    </div>
+          {/* <input type="submit" value={props.label} /> */}
+          <div>
+            <Link to={"/menu"}>
+              <button className="login-btn">Login</button>
+            </Link>
+          </div>
+        </form>
+      </div>
+    </>
   );
 };
 

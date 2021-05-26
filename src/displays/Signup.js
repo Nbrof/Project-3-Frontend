@@ -28,7 +28,7 @@ const Signup = (props) => {
                 
                 {/* DELETE button */}
                 <button className="delete" onClick={() => {
-                    props.deleteLSignup(signup)
+                    props.deleteSignup(signup)
                 }}>
                     Delete
                 </button>

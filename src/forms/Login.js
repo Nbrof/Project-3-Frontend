@@ -37,29 +37,29 @@ const Login = (props) => {
             value={loginData.pass}
             onChange={handleChange}
           />
-        {/* <input type="submit" value={props.label} /> */}
-        <div>
-          <Link to={"/menu"}>
-            <button className="login-btn">Login</button>
-          </Link>
-        </div>
-      </form>
-      <div className="middle-text">
-        <p>Forgot your password?</p>
-        <p>or</p>
-        <p>Login With</p>
-      </div>
-      <div className="other-logins">
-          <button className="login-facebook">Login with Facebook</button>
-        <button className="login-goole">Login with Google</button>
-      </div>
-      <p className="no-account">
-        Don't have an account? <span className="red-text">Sign </span>
-      </p>
-    </div>
           {/* <input type="submit" value={props.label} /> */}
+          <div>
+            <Link to={"/menu"}>
+              <button className="login-btn">Login</button>
+            </Link>
+          </div>
+          <div className="middle-text">
+            <p>Forgot your password?</p>
+            <p>or</p>
+            <p>Login With</p>
+          </div>
+          <div className="other-logins">
+            <button className="login-facebook">Login with Facebook</button>
+            <button className="login-goole">Login with Google</button>
+          </div>
+          <p className="no-account">
+            Don't have an account? <span className="red-text">Sign </span>
+          </p>
+        </form>
+      </div>
+      {/* <input type="submit" value={props.label} /> */}
     </>
   );
 };
 
-export default Login
+export default Login;

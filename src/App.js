@@ -29,7 +29,9 @@ function App() {
 
   const [iceCreams, setIceCreams] = React.useState([]);
   const [iceCreamsArr, setIceCreamsArr] = React.useState([])
-  const [iceCream, setIceCream] = React.useState({})
+  // const [iceCream, setIceCream] = React.useState({})
+  const [signUps, setSignUps] = React.useState([])
+  const [logIn, setLogIn] = React.useState({})
 
   const emptyIceCream = {
     name: "",
@@ -55,7 +57,9 @@ function App() {
   };
 
   const [selectedIceCream, setSelectedIceCream] = React.useState(emptyIceCream);
+
   const [selectedLogin, setSelectedLogin] = React.useState(emptyLogin);
+
   const [selectedSignup, setSelectedSignup] = React.useState(emptySignup);
 
   const getIceCream = () => {
@@ -66,6 +70,18 @@ function App() {
         setIceCreamsArr(data);
       });
   };
+
+  const getSignUp = () => {
+    fetch(url + "/signup/")
+      .then((response) => response.json())
+      .then((data) => {
+        setSignUps(data)
+      })
+  }
+
+  const handleLogin = (login) => {
+    setLogIn(login)
+  }
 
   React.useEffect(() => {
     getIceCream();
@@ -83,9 +99,9 @@ function App() {
     }
   }
 
-  const handleClick = (item) => {
-    setIceCream(item)
-  }
+  // const handleClick = (item) => {
+  //   setIceCream(item)
+  // }
 
   const handleCreate = (newIceCream) => {
     fetch(url + "/icecream", {
@@ -126,6 +142,9 @@ function App() {
       getIceCream();
     });
   };
+
+
+
 
   return (
     <div className="App">
@@ -239,7 +258,7 @@ function App() {
                 <Products
                   {...rp} 
                   iceCreams={iceCreams}
-                  handleClick={handleClick}
+                  // handleClick={handleClick}
                 />
                 <Footer />
               </div>
@@ -273,7 +292,7 @@ function App() {
             )} />
           <Route 
             exact 
-            path="/profile" 
+            path="/profile/:id" 
             render={(rp) => (
               <div>
                 <Profile {...rp} />

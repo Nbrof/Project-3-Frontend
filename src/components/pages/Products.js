@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Product = (props) => {
 
-  const {iceCreams, handleClick} = props
+  const {iceCreams} = props
 
   const loaded = () => {
     const products = iceCreams.map((product, index) => {
@@ -11,7 +11,7 @@ const Product = (props) => {
         <div className='ice-cream' key={index}>
           <Link 
             to={`/products/${product.name}`}
-            onClick={() => handleClick(product)}
+            // onClick={() => handleClick(product)}
           >
             <img src={product.img} alt='ice cream'/>
           </Link>

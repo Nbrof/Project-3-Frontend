@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import "./css/Profile.css";
 import { Link } from 'react-router-dom'
@@ -39,14 +41,7 @@ const Profile = (props) => {
 
       )
     }
-    // return (
-    //   <div className='signup-pull'>
-    //     <h1 className='neon-text'>Profile</h1>
-    //     {profiles}
-    //   </div>
-    // )
-  // const loading = () => <h1>Loading...</h1>
-  // return signups.length > 0 ? loaded() : loading()
+    
   return (
     // IMAGE
     <body className='bg-image'>

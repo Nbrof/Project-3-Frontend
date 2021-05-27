@@ -3,17 +3,17 @@
     border-radius: 2.5rem;
     height: 300px;
     width: 300px;
-    margin-left: 93px;
-    margin-top: 20px;
+    /* margin-left: 93px; */
+    margin: 20px auto;
 }
 .ice-cream:hover {
     /* border: 4px solid #e84e4c; */
     border-radius: 2.5rem;
     height: 300px;
     width: 300px;
-    margin-left: 93px;
-    margin-top: 20px;
-     box-shadow:
+    /* margin-left: 93px; */
+    /* margin-top: 20px; */
+    box-shadow:
       0 0 2px #fff,
       0 0 5px #e74d4b,
       0 0 11px #e74d4b,

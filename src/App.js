@@ -27,6 +27,7 @@ library.add(fas, far, fab);
 
 function App() {
   const url = "https://project-3-seir-329.herokuapp.com";
+  // const url = 'localhost:4000'
 
   const [iceCreams, setIceCreams] = React.useState([]);
   const [iceCreamsArr, setIceCreamsArr] = React.useState([])
@@ -170,6 +171,10 @@ function App() {
 
   const handleAdd = (item) => {
     setCart([...cart, item])
+  }
+
+  const handleConfirm = () => {
+    setCart([])
   }
 
 
@@ -354,7 +359,17 @@ function App() {
                 <Order 
                   {...rp} 
                   cart={cart}
+                  handleConfirm={handleConfirm}
                 />
+                <Footer />
+              </div>
+            )} />
+            <Route 
+            exact 
+            path="/order/confirm" 
+            render={(rp) => (
+              <div>
+                <Order {...rp} />
                 <Footer />
               </div>
             )} />

@@ -26,7 +26,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fas, far, fab);
 
 function App() {
-  const url = "https://project-3-seir-329.herokuapp.com/";
+  const url = "https://project-3-seir-329.herokuapp.com";
 
   const [iceCreams, setIceCreams] = React.useState([]);
   const [iceCreamsArr, setIceCreamsArr] = React.useState([])

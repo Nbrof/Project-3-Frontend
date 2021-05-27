@@ -5,3 +5,19 @@
         background-position: 50% -40%;
         background-attachment: fixed;
 }
+
+.parlour {
+        margin: 20px;
+}
+
+.parlour img {
+        height: 400px;
+        width: 600px;
+        
+}
+
+
+.rating span {
+        color: white;
+        margin-left: 5px;
+}

@@ -291,7 +291,7 @@ h2 {
 
 .about, .home, .menu, .more, .offer, .order, .product-info, .products, .profile {
   height: calc(100vh - 42.8px);
-  overflow: auto;
+  overflow-y: auto;
 }
 
 /* TABLET */

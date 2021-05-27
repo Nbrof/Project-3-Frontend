@@ -31,7 +31,6 @@ function App() {
 
   const [iceCreams, setIceCreams] = React.useState([]);
   const [iceCreamsArr, setIceCreamsArr] = React.useState([])
-  // const [iceCream, setIceCream] = React.useState({})
   const [signUps, setSignUps] = React.useState([])
   const [logIn, setLogIn] = React.useState({})
   const [parlours, setParlours] = React.useState([])
@@ -90,6 +89,7 @@ function App() {
         setSignUps(data)
       })
   }
+
 
   const getParlour = () => {
     fetch(url + "/parlour")
@@ -320,7 +320,11 @@ function App() {
             path="/offer" 
             render={(rp) => (
               <div>
-                <Offer {...rp} />
+                <Offer 
+                  {...rp} 
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
                 <Footer />
               </div>
             )} />

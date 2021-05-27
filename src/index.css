@@ -1,28 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,400;0,600;0,700;1,200&display=swap');
+
+
+html {
+  font-family: "Koho"
+}
+
+* {
+  margin: 0;
+  font-family: 'KoHo', sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
 .comp-btns {
 display: flex;
 justify-content:space-evenly;
-margin-top: 250px;
+position: absolute;
+width: 100vw;
+bottom: 0px
 }
 
-
 .home-btn {
-  color: red;
+  color: #e84e4c;
   font-size: 40px;
 }
 
@@ -46,57 +48,238 @@ p {
   color: white;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+.btns {
+  width: 140px;
+  height: 50px;
+  margin: 60vh 10px 0;
+  background-color: #181c20;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
 .signup-form {
+  height: 500px;
   display: flex;
   flex-direction: column;
   width: 250px;
- 
+  /* border: 2px solid #e74d4b; */
+  border-radius: 5%;
+  margin-top:25px;
+  padding: 5px;
+  /* box-shadow: 2px 2px 40px 2px #e74d4b; */
+}
+.signup-details {
+  margin-top: 25px;
+  color:#4d5054
+}
+.form-name {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form-name:focus {
+  outline: none;
+}
+.form-password {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form-password:focus {
+  outline: none;
+}
+.form-email {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form-email:focus {
+  outline: none;
+}
+.form-mobile {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form-mobile:focus {
+  outline: none;
+}
+.form-address {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form-address:focus {
+  outline: none;
+}
+.form-confirm-password {
+  background-color: white;
+  color: white;
+  height: 55px;
+  border-radius: 2.5rem;
+  font-size: 15px;
+  margin: 15px;
+}
+.form--confirm- password:focus {
+  outline: none;
+}
+.made-account {
+  margin-top: 15px;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 500px;
+  /* border: 2px solid #e74d4b; */
+  border-radius: 5%;
+  padding: 25px;
+  margin: 20px;
+  /* box-shadow: 2px 2px 40px 2px #e74d4b; */
 }
-
+.login-email {
+  background-color: white;
+  color: #e2e3e4;
+  border-radius: 2.5rem;
+  height: 45px;
+  font-size: 20px;
+}
+.login-email:focus {
+  outline: none;
+}
+.login-password {
+  background-color: white;
+  color: #e2e3e4;
+  border-radius: 2.5rem;
+  height: 45px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.login-password:focus {
+  outline: none;
+}
+.login-btn {
+  width: 300px;
+  margin-top: 20px;
+  background-color: #e84e4c;
+  color: white;
+  border-radius: 2.5rem;
+  height: 50px;
+  font-size: 20px;
+}
+.middle-text {
+  margin-top: 20px;
+  line-height: 1.2;
+  color: #4d5054
+}
+.other-logins {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.login-facebook {
+  background-color: #3d83c0;
+  color: white;
+  border-radius: 2.5rem;
+  height: 50px;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.login-google {
+  background-color: #f56620;
+  color: white;
+  border-radius: 2.5rem;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.no-account {
+  margin-top: 70px;
+  color: #4d5054;
+  font-size: 18px;
+}
+.red-text {
+ color: #e84e4c;
+ font-weight: 900;
+ text-decoration: none;
+}
 .signup {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .login {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
-input { 
-margin: 5px;
-
+input {
+  margin: 5px;
 }
 
 .signup-btn {
-  width: 75px;
+  width: 240px;
+  margin-top: 10px;
+  background-color:#e74d4b;
+  color: white;
+  height: 45px;
+  border-radius: 2.5rem;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
 }
 
-.login-btn {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  margin-left: 75px;
-}
+.neon-text {
+    color: #fff;
+    font-size: 40px;
+    margin-top:20px;
+    /* text-shadow:
+      0 0 7px #fff,
+      0 0 10px #e74d4b,
+      0 0 21px #e74d4b,
+      0 0 42px #e74d4b,
+      0 0 82px #e74d4b,
+      0 0 92px #e74d4b,
+      0 0 102px #e74d4b,
+      0 0 151px #e74d4b; */
+  }
+  .login-details {
+    margin-top: 10px;
+    color: #4d5054;
+    font-size: 18px;
+  }
 
-
-
-body {
+/* body {
   background: black;
   background-image: url("https://res.cloudinary.com/dejg3dz16/image/upload/v1621912001/Screen_Shot_2021-05-24_at_9.59.14_PM_ta2eju.png");
   background-attachment: fixed;
   background-position: -480px -220px;
-  /* background-repeat: no-repeat; */
-  
-}
+  background-repeat: no-repeat;
+} */
 
 .create {
   margin-top: 180px;
@@ -106,27 +289,21 @@ h2 {
   color: white;
 }
 
+.about, .home, .menu, .more, .offer, .order, .product-info, .products, .profile {
+  height: calc(100vh - 42.8px);
+  overflow: auto;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
-
   body {
     background-position: -320px -220px;
   }
-
-
 }
-
 
 /* LAPTOP */
 @media screen and (min-width: 1024px) {
-
   body {
     background-position: -170px -220px;
   }
-
-
-
-
-
-
 }

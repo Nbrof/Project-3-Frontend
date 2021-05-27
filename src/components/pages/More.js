@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 const More = (props) => {
   return (
     <div className='more'>
+      <h1 className='neon-text'>More</h1>
       <Link to='about'>
         <button>
           About

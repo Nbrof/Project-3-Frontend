@@ -16,7 +16,7 @@ const Home = (props) => {
           <h2>{parlour.name}</h2>
           <div className="rating">
             <FontAwesomeIcon className="star" icon="star" />
-            <span>4</span>
+            <span>{parlour.rating.split('')[0]/2}</span>
           </div>
         </Link>
       </div>

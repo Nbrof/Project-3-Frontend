@@ -1,7 +1,7 @@
 .i-frizz {
     height: 50px;
-    weight: 50px;
-    margin-top: ;
+    /* width: 50px; */
+    /* margin-top: ; */
 }
 
 img {
@@ -50,7 +50,7 @@ font-weight: 600;
     background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/o_66/v1622003751/icecream_bg_pljiay.jpg');
     background-repeat: no-repeat;
     background-size: 500px 700px;
-    background-position: 100% -40%;
+    background-position: center;
     background-attachment: fixed;
     background-size: 700px 500px;
 }

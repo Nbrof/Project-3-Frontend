@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ProductInfo = (props) => {
   const url = "https://project-3-seir-329.herokuapp.com";
 
-  const [iceCream, setIceCream] = React.useState({});
+  const [iceCream, setIceCream] = React.useState(null);
 
   const getIceCream = () => {
     fetch(url + "/icecream/" + `${props.match.params.product}`)
@@ -39,7 +39,7 @@ const ProductInfo = (props) => {
 
   const loading = () => <h1>Loading...</h1>;
 
-  return iceCream !== {} ? loaded() : loading();
+  return iceCream !== null ? loaded() : loading();
 };
 
 export default ProductInfo;

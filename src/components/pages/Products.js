@@ -18,7 +18,9 @@ const Product = (props) => {
             // onClick={() => handleClick(product)}
           >
               <img src={product.img} alt='ice cream' />
-              <h4 className="product-rating">{product.rating}<FontAwesomeIcon className="star-rating" icon={["fas", 'star']}/></h4>
+              <h4 className="product-rating">
+                <FontAwesomeIcon className="star-rating" icon={["fas", 'star']}/> {product.rating.split('/')[0]/2}
+              </h4>
           </Link>
           </div>
           </>

@@ -26,13 +26,16 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fas, far, fab);
 
 function App() {
-  const url = "http://localhost:4000";
+  const url = "https://project-3-seir-329.herokuapp.com";
+  // const url = 'localhost:4000'
 
   const [iceCreams, setIceCreams] = React.useState([]);
   const [iceCreamsArr, setIceCreamsArr] = React.useState([])
   // const [iceCream, setIceCream] = React.useState({})
   const [signUps, setSignUps] = React.useState([])
   const [logIn, setLogIn] = React.useState({})
+  const [parlours, setParlours] = React.useState([])
+  const [cart, setCart] = React.useState([])
 
   const emptyIceCream = {
     name: "",
@@ -80,13 +83,35 @@ function App() {
       })
   }
 
+  const getLogIn = () => {
+    fetch(url + "/login/")
+      .then((response) => response.json())
+      .then((data) => {
+        setSignUps(data)
+      })
+  }
+
+  const getParlour = () => {
+    fetch(url + "/parlour")
+      .then((response) => response.json())
+      .then((data) => {
+        setParlours(data)
+      })
+  }
+
   const handleLogin = (login) => {
     setLogIn(login)
   }
 
-  React.useEffect(() => {
-    getIceCream();
-  }, []);
+  React.useEffect(() => {getIceCream()}, []);
+
+  React.useEffect(() => {getSignUp()}, [])
+
+  React.useEffect(() => {getLogIn()}, [])
+
+  React.useEffect(() => getParlour(), [])
+
+  console.log(parlours)
 
   const handleFilter = (arr, filter) => {
     if (filter === "all") {
@@ -144,7 +169,13 @@ function App() {
     });
   };
 
+  const handleAdd = (item) => {
+    setCart([...cart, item])
+  }
 
+  const handleConfirm = () => {
+    setCart([])
+  }
 
 
   return (
@@ -237,7 +268,12 @@ function App() {
             path="/home" 
             render={(rp) => (
               <div>
-                <Home {...rp} />
+                <Home 
+                  {...rp} 
+                  parlours={parlours}
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
                 <Footer/>
               </div>
               )} />
@@ -272,7 +308,10 @@ function App() {
             path="/products/:product"
             render={(rp) => (
               <div>
-                <ProductInfo {...rp} />
+                <ProductInfo 
+                  {...rp} 
+                  handleAdd={handleAdd}
+                />
                 <Footer />
               </div>
             )} />
@@ -315,6 +354,19 @@ function App() {
           <Route 
             exact 
             path="/order" 
+            render={(rp) => (
+              <div>
+                <Order 
+                  {...rp} 
+                  cart={cart}
+                  handleConfirm={handleConfirm}
+                />
+                <Footer />
+              </div>
+            )} />
+            <Route 
+            exact 
+            path="/order/confirm" 
             render={(rp) => (
               <div>
                 <Order {...rp} />

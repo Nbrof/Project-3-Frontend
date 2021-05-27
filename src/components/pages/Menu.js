@@ -16,7 +16,7 @@ const Menu = (props) => {
 
         <Link 
           to={"/products"}
-          onClick={() => handleFilter(iceCreams, "all")}
+          onClick={() => handleFilter(iceCreams, "ice cream")}
         >
           <img
             className="icecreams-button"

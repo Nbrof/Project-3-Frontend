@@ -14,6 +14,7 @@ import Menu from "./components/pages/Menu";
 import More from "./components/pages/More";
 import Offer from "./components/pages/Offer";
 import Order from "./components/pages/Order";
+import Confirm from "./components/pages/Confirm"
 import Products from "./components/pages/Products";
 import ProductInfo from "./components/pages/ProductInfo";
 import Profile from "./components/pages/Profile";
@@ -373,8 +374,8 @@ function App() {
             path="/order/confirm" 
             render={(rp) => (
               <div>
-                <Order {...rp} />
-                <Footer />
+                <Confirm {...rp} />
+                {/* <Footer /> */}
               </div>
             )} />
         </Switch>

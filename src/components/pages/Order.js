@@ -1,8 +1,10 @@
 import React from "react";
 import './css/Order.css'
-
+import {Link} from 'react-router-dom'
 
 const Order = (props) => {
+
+
   const loaded = () => {
     let total = 0
     const order = props.cart.map((product, index) => {
@@ -25,7 +27,13 @@ const Order = (props) => {
             <h4>$ {total}</h4>
           </div>
         </div>
-        <button>Confrim Order</button>
+        <Link 
+          to='/order/confirm'
+          onClick={() => props.handleConfirm()}
+        >
+          <button>Confrim Order</button>
+        </Link>
+        
       </div>
     );
   };

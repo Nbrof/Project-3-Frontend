@@ -34,6 +34,7 @@ function App() {
   const [signUps, setSignUps] = React.useState([])
   const [logIn, setLogIn] = React.useState({})
   const [parlours, setParlours] = React.useState([])
+  const [cart, setCart] = React.useState([])
 
   const emptyIceCream = {
     name: "",
@@ -167,7 +168,9 @@ function App() {
     });
   };
 
-
+  const handleAdd = (item) => {
+    setCart([...cart, item])
+  }
 
 
   return (
@@ -300,7 +303,10 @@ function App() {
             path="/products/:product"
             render={(rp) => (
               <div>
-                <ProductInfo {...rp} />
+                <ProductInfo 
+                  {...rp} 
+                  handleAdd={handleAdd}
+                />
                 <Footer />
               </div>
             )} />
@@ -345,7 +351,10 @@ function App() {
             path="/order" 
             render={(rp) => (
               <div>
-                <Order {...rp} />
+                <Order 
+                  {...rp} 
+                  cart={cart}
+                />
                 <Footer />
               </div>
             )} />

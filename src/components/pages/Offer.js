@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 
 
 const Offer = (props) => {
+
+  const {iceCreams, handleFilter} = props
+  
   return (
 
     <div className='offer'>
@@ -12,13 +15,19 @@ const Offer = (props) => {
 
     <div className='bubble-icons'>
 
-      <Link to={"/products"}>
+      <Link 
+        to={"/products"}
+        onClick={() => handleFilter(iceCreams, "ice cream")}
+      >
           <img className="icon-1" src='https://res.cloudinary.com/dejg3dz16/image/upload/c_scale,w_193/v1622098547/UbeIceCreamHERO-ae953a4c3ede4690bd2f0ccbc104ea12_tpnbiv.jpg' />
       </Link>
       <p className='txt-btns'>Flavors</p>
       
 
-      <Link to={"/products"}>
+      <Link 
+        to={"/products"}
+        onClick={() => handleFilter(iceCreams, "float")}
+      >
           <img className="icon-1" src='https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/223129.jpg?output-format=auto&output-quality=auto' />
       </Link>
       <p className='txt-btns'>Floats</p>

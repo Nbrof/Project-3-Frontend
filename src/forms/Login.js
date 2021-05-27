@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Login = (props) => {
 
-  const url = "http://localhost:4000";
+  const url = "https://project-3-seir-329.herokuapp.com";
 
   const [login, setLogin] = React.useState({})
 

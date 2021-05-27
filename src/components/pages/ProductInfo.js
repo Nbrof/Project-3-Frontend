@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductInfo = (props) => {
 
-  const url = "http://localhost:4000";
+  const url = "https://project-3-seir-329.herokuapp.com";
 
   const [iceCream, setIceCream] = React.useState({});
 

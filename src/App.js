@@ -33,6 +33,7 @@ function App() {
   // const [iceCream, setIceCream] = React.useState({})
   const [signUps, setSignUps] = React.useState([])
   const [logIn, setLogIn] = React.useState({})
+  const [parlours, setParlours] = React.useState([])
 
   const emptyIceCream = {
     name: "",
@@ -88,6 +89,14 @@ function App() {
       })
   }
 
+  const getParlour = () => {
+    fetch(url + "/parlour")
+      .then((response) => response.json())
+      .then((data) => {
+        setParlours(data)
+      })
+  }
+
   const handleLogin = (login) => {
     setLogIn(login)
   }
@@ -98,7 +107,9 @@ function App() {
 
   React.useEffect(() => {getLogIn()}, [])
 
-  console.log(logIn)
+  React.useEffect(() => getParlour(), [])
+
+  console.log(parlours)
 
   const handleFilter = (arr, filter) => {
     if (filter === "all") {
@@ -249,7 +260,12 @@ function App() {
             path="/home" 
             render={(rp) => (
               <div>
-                <Home {...rp} />
+                <Home 
+                  {...rp} 
+                  parlours={parlours}
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
                 <Footer/>
               </div>
               )} />

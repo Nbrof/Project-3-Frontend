@@ -57,7 +57,7 @@ const Login = (props) => {
           />
           {/* <input type="submit" value={props.label} /> */}
           <div>
-            <Link to={"/menu"}>
+            <Link to={"/home"}>
               <button className="login-btn">Login</button>
             </Link>
           </div>

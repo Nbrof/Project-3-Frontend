@@ -40,7 +40,7 @@ const Offer = (props) => {
 
     
 
-    <h3 className='pop-fla'>Popular Flavor </h3>
+    <h3 className='pop-fla'>Popular Flavors</h3>
     <p className='star'>&#9733; 4.9</p>
 
     <img className='icecream-month' src='https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'  alt='icecream of the month'/>

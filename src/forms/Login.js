@@ -40,7 +40,7 @@ const Login = (props) => {
         <form onSubmit={handleSubmit} className="login-form">
           <input
             className="login-email"
-            placeholder="       Your email"
+            placeholder="       Email"
             type="text"
             name="email"
             value={loginData.email}

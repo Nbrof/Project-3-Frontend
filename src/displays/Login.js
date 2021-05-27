@@ -7,7 +7,7 @@ const Login = (props) => {
 
 
     const loaded = () => (
-        <div style={{textAlign: "center"}} className="'image-layout">
+        <div style={{textAlign: "center"}} className="image-layout">
         {logins.map((login) => (
             <article key={login._id}>
 

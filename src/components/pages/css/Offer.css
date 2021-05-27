@@ -46,7 +46,7 @@
 
 .bubble-icons {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-around;
     margin-top: 50px;
 
 }
@@ -58,6 +58,8 @@
 .txt-btns {
 margin-top: 10px;
 }
+
+
 
 .floats {
     margin-top: 60px;

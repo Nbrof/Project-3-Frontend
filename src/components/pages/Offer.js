@@ -12,19 +12,19 @@ const Offer = (props) => {
 
     <div className='bubble-icons'>
 
-      <Link to={"/icecream"}>
+      <Link to={"/products"}>
           <img className="icon-1" src='https://res.cloudinary.com/dejg3dz16/image/upload/c_scale,w_193/v1622098547/UbeIceCreamHERO-ae953a4c3ede4690bd2f0ccbc104ea12_tpnbiv.jpg' />
       </Link>
       <p className='txt-btns'>Flavors</p>
       
 
-      <Link to={"/icecream"}>
+      <Link to={"/products"}>
           <img className="icon-1" src='https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/223129.jpg?output-format=auto&output-quality=auto' />
       </Link>
       <p className='txt-btns'>Floats</p>
 
 
-      <Link to={"/icecream"}>
+      <Link to={"/home"}>
           <img className="icon-1" src='https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_29/1462597/cowlicks_creamery_cones-americas_best_ice_cream-071819-1462597.jpg' />
       </Link>
 

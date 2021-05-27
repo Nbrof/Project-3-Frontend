@@ -24,7 +24,6 @@ const ProductInfo = (props) => {
         <h1 className="neon-text">Product Info</h1>
         <img src={iceCream.img} alt={iceCream.name} />
         <h3>{iceCream.name}</h3>
-
         <h4 className="product-rating">
           <FontAwesomeIcon className="star-rating" icon={["fas", "star"]} /> {iceCream.rating.split('/')[0]/2}
         </h4>

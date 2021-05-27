@@ -51,5 +51,6 @@
 
 .txt-btns {
 margin-top: 70px;
-
+position: relative;
+right: 60px;
 }

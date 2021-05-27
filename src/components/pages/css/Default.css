@@ -10,7 +10,7 @@ h4 {
     text-align: left;
     /* padding-left: 20px; */
 }
-p {
+.default-p {
     position: relative;
     top: 325px;
     font-size: 19px;

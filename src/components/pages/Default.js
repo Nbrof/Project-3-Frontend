@@ -18,10 +18,10 @@ const Default = (props) => {
         />
         ZZY
       </h1>
-      <p>Discover the best</p>
-      <p>flavored ice-cream</p>
-      <p> and have access to fast</p>
-      <p>delivery to your doorstep</p>
+      <p className="default-p">Discover the best</p>
+      <p className="default-p">flavored ice-cream</p>
+      <p className="default-p">and have access to fast</p>
+      <p className="default-p">delivery to your doorstep</p>
 
       <div className="home-btns">
         <Link to={"/login"}>

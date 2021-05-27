@@ -49,8 +49,9 @@ font-weight: 600;
 .default-bg {
     background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/o_66/v1622003751/icecream_bg_pljiay.jpg');
     background-repeat: no-repeat;
-    background-size: 500px 700px;
+    background-size: 700px 700px;
     background-position: center;
     background-attachment: fixed;
     background-size: 700px 500px;
+    
 }

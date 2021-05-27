@@ -1,5 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import "./css/Products.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Product = (props) => {
 
@@ -8,14 +10,18 @@ const Product = (props) => {
   const loaded = () => {
     const products = iceCreams.map((product, index) => {
       return (
+      <>
+        <h3 className="product-name">{product.name}</h3>
         <div className='ice-cream' key={index}>
           <Link 
             to={`/products/${product.name}`}
             // onClick={() => handleClick(product)}
           >
-            <img src={product.img} alt='ice cream'/>
+              <img src={product.img} alt='ice cream' />
+              <h4 className="product-rating">{product.rating}<FontAwesomeIcon className="star-rating" icon={["fas", 'star']}/></h4>
           </Link>
-        </div>
+          </div>
+          </>
       )
     }) 
 

@@ -1,7 +1,11 @@
 .i-frizz {
-    height: 50px;
+    height: 70px;
     weight: 50px;
     margin-top: 100px;
+}
+
+.frizz-logo {
+    font-size: 70px; 
 }
 
 img {
@@ -12,7 +16,26 @@ img {
     height: 100px;
     width: 100px;
     margin-top: 50px;
+    margin-left: 155px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 
+ .bg-image {
+    background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg');
+    background-repeat: no-repeat;
+    background-size: 500px 700px;
+    background-position: 100% -40%;
+    background-attachment: fixed;
+}
 
+.log-out-btn {
+margin-right: 15px;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}

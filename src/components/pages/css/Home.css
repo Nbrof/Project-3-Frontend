@@ -1,49 +1,7 @@
-.i-frizz {
-    height: 50px;
-    weight: 50px;
-}
-
-img {
-    margin: -2px;
-}
-
-h4 {
-    color: white;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.home-btns {
-    display: flex;
-    flex-direction: column;
-    
-    margin-top: 70px;
-}
-
-.login-btn2 {
-width: 300px;
-height: 45px;
-border-radius: 25px;
-color: white;
-background: #e84e4c;
-margin-bottom: 20px;
-}
-
-.signup-btn2 {
-width: 300px;
-height: 45px;
-border-radius: 25px;
-color: #e84e4c;
-background: #181c1e;
-border: 1px solid #e84e4c;
-font-size: 15px;
-font-weight: 600;
-}
-
-.logo {
-    margin-top: 50px;
-}
-
-.bw-bg {
-    opacity: 0.2;
+.home-bg2  {
+        background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg');
+        background-repeat: no-repeat;
+        background-size: 700px 700px;
+        background-position: 50% -40%;
+        background-attachment: fixed;
 }

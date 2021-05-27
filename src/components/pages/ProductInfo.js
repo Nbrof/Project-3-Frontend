@@ -1,7 +1,6 @@
 import React from "react";
 
 const ProductInfo = (props) => {
-
   const url = "https://project-3-seir-329.herokuapp.com";
 
   const [iceCream, setIceCream] = React.useState({});
@@ -14,15 +13,20 @@ const ProductInfo = (props) => {
       });
   };
 
-  React.useEffect(() => {getIceCream()}, []);
+  React.useEffect(() => {
+    getIceCream();
+  }, []);
 
   const loaded = () => {
     return (
       <div className="product-info">
-        <h1 className='neon-text'>Product Info</h1>
+        <h1 className="neon-text">Product Info</h1>
         <img src={iceCream.img} alt={iceCream.name} />
         <h3>{iceCream.name}</h3>
-        <button onClick={() => props.handleAdd(iceCream)}>Add to Cart</button>
+        <div className=" description-div">
+          <p className="description">{iceCream.description}</p>
+        </div>
+        <button className="add-to-cart-btn" onClick={() => props.handleAdd(iceCream)}>Add to Cart</button>
       </div>
     );
   };

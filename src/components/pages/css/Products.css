@@ -39,3 +39,21 @@ img {
  color: red;
  margin-left: 10px;
 }
+.description {
+    margin-top: 20px;
+
+}
+.description-div {
+    width: 55%;
+    margin: auto
+}
+.add-to-cart-btn {
+    color: white;
+    background-color: #EE4540;
+    border-radius: 2.5rem;
+    border: none;
+    height: 35px;
+    font-size: 15px;
+    width: 45%;
+    margin-top: 15px;
+}

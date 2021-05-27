@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProductInfo = (props) => {
   const url = "https://project-3-seir-329.herokuapp.com";
@@ -23,10 +24,22 @@ const ProductInfo = (props) => {
         <h1 className="neon-text">Product Info</h1>
         <img src={iceCream.img} alt={iceCream.name} />
         <h3>{iceCream.name}</h3>
+<<<<<<< HEAD
         <div className=" description-div">
           <p className="description">{iceCream.description}</p>
         </div>
         <button className="add-to-cart-btn" onClick={() => props.handleAdd(iceCream)}>Add to Cart</button>
+=======
+        <h4 className="product-rating">
+          <FontAwesomeIcon className="star-rating" icon={["fas", "star"]} /> {iceCream.rating.split('/')[0]/2}
+        </h4>
+        <h4>Type: {iceCream.type}</h4>
+        <h4>Has Dairy: {iceCream.dairy}</h4>
+        <h4>Has Toppings: {iceCream.toppings}</h4>
+        <h4>Description: {iceCream.description}</h4>
+        <h4>$ {iceCream.price}</h4>
+        <button onClick={() => props.handleAdd(iceCream)}>Add to Cart</button>
+>>>>>>> 33dad7f02a1580b65afd071fe60bcc4cc92bb1ac
       </div>
     );
   };

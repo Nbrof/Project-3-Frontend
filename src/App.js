@@ -320,7 +320,11 @@ function App() {
             path="/offer" 
             render={(rp) => (
               <div>
-                <Offer {...rp} />
+                <Offer 
+                  {...rp} 
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
                 <Footer />
               </div>
             )} />

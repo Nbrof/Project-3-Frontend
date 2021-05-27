@@ -26,10 +26,12 @@ const Home = (props) => {
   });
 
   return (
-    <body className="home-bg2 home">
+    <div className="home-bg2 home">
       <h1>HOME</h1>
-      {parlours}
-    </body>
+      <div className='parlour-list'>
+        {parlours}
+      </div>
+    </div>
   );
 };
 export default Home;

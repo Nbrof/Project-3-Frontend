@@ -1,13 +1,24 @@
 .home-bg2  {
         background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg');
         background-repeat: no-repeat;
-        background-size: 700px 700px;
+        background-size: 1000px calc(100vh - 31px);
         background-position: 50% -40%;
         background-attachment: fixed;
 }
 
+
+
 .parlour {
         margin: 20px;
+        width: 600px;
+        margin: 40px auto;
+}
+
+.parlour-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 20px 40px;
 }
 
 .parlour img {

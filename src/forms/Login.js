@@ -3,10 +3,27 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Login = (props) => {
+
+  const url = "https://project-3-seir-329.herokuapp.com";
+
+  const [login, setLogin] = React.useState({})
+
+  const getSignUp = (email) => {
+    fetch(url + '/signup/' + email)
+      .then((response) => response.json())
+      .then((data) => {
+        setLogin(data[0])
+      })
+  }
+
+
   const [loginData, setLoginData] = React.useState(props.login);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (getSignUp(loginData.email) !== {}) {
+      
+    }
     props.handleSubmit(loginData);
     props.history.push("/home");
   };

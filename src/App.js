@@ -80,13 +80,25 @@ function App() {
       })
   }
 
+  const getLogIn = () => {
+    fetch(url + "/login/")
+      .then((response) => response.json())
+      .then((data) => {
+        setSignUps(data)
+      })
+  }
+
   const handleLogin = (login) => {
     setLogIn(login)
   }
 
-  React.useEffect(() => {
-    getIceCream();
-  }, []);
+  React.useEffect(() => {getIceCream()}, []);
+
+  React.useEffect(() => {getSignUp()}, [])
+
+  React.useEffect(() => {getLogIn()}, [])
+
+  console.log(logIn)
 
   const handleFilter = (arr, filter) => {
     if (filter === "all") {

@@ -81,8 +81,9 @@ button:hover {
 .form-name {
   background-color: white;
   color: white;
-  height: 55px;
+  height: 75px;
   border-radius: 2.5rem;
+  border: none;
   font-size: 15px;
   margin: 15px;
 }
@@ -92,8 +93,9 @@ button:hover {
 .form-password {
   background-color: white;
   color: white;
-  height: 55px;
+  height: 75px;
   border-radius: 2.5rem;
+  border: none;
   font-size: 15px;
   margin: 15px;
 }
@@ -103,8 +105,9 @@ button:hover {
 .form-email {
   background-color: white;
   color: white;
-  height: 55px;
+  height: 75px;
   border-radius: 2.5rem;
+  border: none;
   font-size: 15px;
   margin: 15px;
 }
@@ -114,8 +117,9 @@ button:hover {
 .form-mobile {
   background-color: white;
   color: white;
-  height: 55px;
+  height: 75px;
   border-radius: 2.5rem;
+  border: none;
   font-size: 15px;
   margin: 15px;
 }
@@ -125,8 +129,9 @@ button:hover {
 .form-address {
   background-color: white;
   color: white;
-  height: 55px;
+  height: 75px;
   border-radius: 2.5rem;
+  border: none;
   font-size: 15px;
   margin: 15px;
 }
@@ -136,8 +141,9 @@ button:hover {
 .form-confirm-password {
   background-color: white;
   color: white;
-  height: 55px;
+  height: 75px;
   border-radius: 2.5rem;
+  border: none;
   font-size: 15px;
   margin: 15px;
 }
@@ -151,7 +157,7 @@ button:hover {
 .login-form {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 310px;
   /* border: 2px solid #e74d4b; */
   border-radius: 5%;
   padding: 25px;
@@ -162,6 +168,7 @@ button:hover {
   background-color: white;
   color: #e2e3e4;
   border-radius: 2.5rem;
+  border: none;
   height: 45px;
   font-size: 20px;
 }
@@ -172,6 +179,7 @@ button:hover {
   background-color: white;
   color: #e2e3e4;
   border-radius: 2.5rem;
+  border: none;
   height: 45px;
   font-size: 20px;
   margin-top: 20px;
@@ -185,6 +193,7 @@ button:hover {
   background-color: #e84e4c;
   color: white;
   border-radius: 2.5rem;
+  border: none;
   height: 50px;
   font-size: 20px;
 }
@@ -202,6 +211,7 @@ button:hover {
   background-color: #3d83c0;
   color: white;
   border-radius: 2.5rem;
+  border: none;
   height: 50px;
   margin: 10px;
   font-size: 15px;
@@ -209,8 +219,12 @@ button:hover {
 }
 .login-google {
   background-color: #f56620;
+  width: 300px;
+  position: relative;
+  left: 6px;
   color: white;
   border-radius: 2.5rem;
+  border: none;
   height: 50px;
   margin-top: 10px;
   font-size: 15px;
@@ -247,6 +261,7 @@ input {
   color: white;
   height: 45px;
   border-radius: 2.5rem;
+  border: none;
   font-size: 20px;
 }
 a {
@@ -256,7 +271,7 @@ a {
 .neon-text {
     color: #fff;
     font-size: 40px;
-    margin-top:20px;
+    margin-top:130px;
     /* text-shadow:
       0 0 7px #fff,
       0 0 10px #e74d4b,

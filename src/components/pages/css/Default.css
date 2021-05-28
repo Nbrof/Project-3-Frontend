@@ -1,71 +1,67 @@
 .i-frizz-default {
-    /* margin-top: 500px; */
-    height: 60px;
-    width: 90px;
-    position: relative;
-    right: 45px;
-    top: 125px;
+  /* margin-top: 500px; */
+  height: 55px;
+  width: 60px;
+  position: relative;
+  right: 40px;
+  top: 134px;
 }
-
 
 h4 {
-    color: white;
-    text-align: left;
-    /* padding-left: 20px; */
+  color: white;
+  text-align: left;
+  /* padding-left: 20px; */
 }
 .default-p {
-    position: relative;
-    top: 325px;
-    font-size: 19px;
+  position: relative;
+  top: 325px;
+  font-size: 19px;
 }
 
 .home-btns {
-    display: flex;
-    flex-direction: column;
-    margin-top: 450px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 450px;
 }
 
 .login-btn2 {
-    width: 300px;
-    height: 45px;
-    border-radius: 2.5rem;
-    color: white;
-    background: #e84e4c;
-    border: 1px solid #e84e4c;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 20px;
+  width: 300px;
+  height: 45px;
+  border-radius: 2.5rem;
+  color: white;
+  background: #e84e4c;
+  border: 1px solid #e84e4c;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .signup-btn2 {
-width: 300px;
-height: 45px;
-border-radius: 2.5rem;
-color: #e84e4c;
-background: #181c1e;
-border: 1px solid #e84e4c;
-font-size: 15px;
-font-weight: 600;
+  width: 300px;
+  height: 45px;
+  border-radius: 2.5rem;
+  color: #e84e4c;
+  background: #181c1e;
+  border: 1px solid #e84e4c;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .logo {
-   position: relative;
-   top: 200px;
-   font-size:75px ;
-   letter-spacing: 30px;
+  position: relative;
+  top: 200px;
+  font-size: 55px;
+  letter-spacing: 30px;
 }
 
-
-
 .default-bg {
-    background-image: url('https://res.cloudinary.com/dwoglig0f/image/upload/v1622149991/4-5-2021_cHw9IR6Aj1_1_az0zlm.png');
-    background-repeat: no-repeat;
-    /* background-size: 700px 700px; */
-    background-position: top;
-    /* background-attachment: fixed; */
-    background-size: 525px 1920px;
-    /* opacity: .02; */
-    height: 100vh;
-    overflow-y: auto;
-    
+  background-image: url("https://res.cloudinary.com/dwoglig0f/image/upload/v1622149991/4-5-2021_cHw9IR6Aj1_1_az0zlm.png");
+  background-repeat: no-repeat;
+  /* background-size: 700px 700px; */
+  background-position: top;
+  background-attachment: fixed;
+  background-size: 1525px 1920px;
+  /* opacity: .02; */
+  height: 100vh;
+  overflow-y: auto;
 }

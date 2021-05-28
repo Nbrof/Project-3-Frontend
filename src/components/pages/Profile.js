@@ -72,7 +72,7 @@ const Profile = (props) => {
     
       <span className='log-out-btn'>
       <Link to='/'>
-        <button>Log Out</button>
+        <button className="log-out-btn">Log Out</button>
       </Link>
       </span>
 

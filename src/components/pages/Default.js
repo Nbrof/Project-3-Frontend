@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Default = (props) => {
   return (
-    <body className="default-bg">
+    <div className="default-bg">
       {/* <img
         className="bw-bg"
         src="https://res.cloudinary.com/dejg3dz16/image/upload/v1622003751/icecream_bg_pljiay.jpg"
@@ -32,7 +32,7 @@ const Default = (props) => {
           <button className="signup-btn2">Create an Account</button>
         </Link>
       </div>
-    </body>
+    </div>
   );
 };
 

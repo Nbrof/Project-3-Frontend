@@ -11,7 +11,7 @@
   height: 50px;
   border-radius: 15px 100px;
   display: inline-block;
-  position: absolute;
+  position: relative;
   left: 40px;
   margin-top: 30px;
   
@@ -23,7 +23,7 @@
   height: 50px;
   border-radius: 15px 100px;
   display: inline-block;
-  position: absolute;
+  position: relative;
   left: 40px;
   margin-top: 30px;
 }
@@ -33,7 +33,7 @@
   height: 50px;
   border-radius: 15px 100px;
   display: inline-block;
-  position: absolute;
+  position: relative;
   left: 40px;
   margin-top: 30px;
 }
@@ -42,8 +42,13 @@ body {
   background: #202327;
 }
 
-html {
+/* html {
   background: #202327;
+} */
+
+.menu-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
 }
 
 .menu-header {
@@ -96,9 +101,10 @@ html {
   height: 370px;
   background: red;
   display: inline-block;
-  position: absolute;
+  /* position: relative; */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  margin-top: 150px;
   overflow: auto !important;
 }
 
@@ -107,7 +113,7 @@ html {
   border: none;
   font-size: 20px;
   /* display: inline-block; */
-  position: absolute;
+  position: relative;
   margin-left: -15px;
   margin-top: 40px;
   color: red;

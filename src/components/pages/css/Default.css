@@ -1,12 +1,11 @@
 .i-frizz-default {
     /* margin-top: 500px; */
-    height: 60px;
-    width: 90px;
+    height: 55px;
+    width: 60px;
     position: relative;
-    right: 45px;
-    top: 125px;
+    right: 40px;
+    top: 134px;
 }
-
 
 h4 {
     color: white;
@@ -51,7 +50,7 @@ font-weight: 600;
 .logo {
    position: relative;
    top: 200px;
-   font-size:75px ;
+   font-size:55px ;
    letter-spacing: 30px;
 }
 
@@ -63,7 +62,7 @@ font-weight: 600;
     /* background-size: 700px 700px; */
     background-position: top;
     background-attachment: fixed;
-    background-size: 525px 1920px;
+    background-size: 1525px 1920px;
     /* opacity: .02; */
     
 }

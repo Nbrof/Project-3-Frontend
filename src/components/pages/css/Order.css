@@ -1,4 +1,4 @@
-/* .order-list {
+.order-list {
   max-width: 700px;
   margin: 20px auto;
   
@@ -49,7 +49,7 @@
   border: 1px solid #999;
   font-size: 20px;
 }
- */
+
 
 
 
@@ -111,4 +111,15 @@ b {
 
 .order-body {
   color: black;
+}
+
+.confirm-order {
+  width: 240px;
+  margin-top: 10px;
+  background-color:#e74d4b;
+  color: white;
+  height: 45px;
+  border-radius: 2.5rem;
+  border: none;
+  font-size: 20px;
 }

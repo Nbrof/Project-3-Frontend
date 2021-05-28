@@ -8,39 +8,39 @@ import { Link } from 'react-router-dom'
 const Profile = (props) => {
   const { signup } = props
   const {signups, handleClick} = props
-  const loaded = () => {
-      return (
+  // const loaded = () => {
+  //     return (
         
 
         
-        <div className='profile'>
-          <Link 
-            to={`/profile`}
-            onClick={() => handleClick(signup)}>
-            <p>{signup.name}</p>
-            <p>{signup.email}</p>
-            <p>{signup.address}</p>
-          </Link>
-           {/* EDIT button */}
-                <button className="edit" onClick={() => {
-                    props.selectSignup(signup)
-                    props.history.push("/edit")
-                }}>
-                    EDIT
-                </button>
-                {/* DELETE button */}
-                <button className="delete" onClick={() => {
-                    props.deleteSignup(signup)
-                }}>
-                    Delete
-                </button>
-        </div>
+  //       <div className='profile'>
+  //         <Link 
+  //           to={`/profile`}
+  //           onClick={() => handleClick(signup)}>
+  //           <p>{signup.name}</p>
+  //           <p>{signup.email}</p>
+  //           <p>{signup.address}</p>
+  //         </Link>
+  //          {/* EDIT button */}
+  //               <button className="edit" onClick={() => {
+  //                   props.selectSignup(signup)
+  //                   props.history.push("/edit")
+  //               }}>
+  //                   EDIT
+  //               </button>
+  //               {/* DELETE button */}
+  //               <button className="delete" onClick={() => {
+  //                   props.deleteSignup(signup)
+  //               }}>
+  //                   Delete
+  //               </button>
+  //       </div>
 
 
 
 
-      )
-    }
+  //     )
+  //   }
     
   return (
     // IMAGE
@@ -72,7 +72,7 @@ const Profile = (props) => {
     
       <span className='log-out-btn'>
       <Link to='/'>
-        <button>Log Out</button>
+        <button className="log-out-btn">Log Out</button>
       </Link>
       </span>
 

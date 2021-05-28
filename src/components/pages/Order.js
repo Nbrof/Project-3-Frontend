@@ -93,8 +93,7 @@
 import React from "react";
 import './css/Order.css';
 import {Link} from 'react-router-dom';
-// import { useState } from 'react-dom';
-// import Confirm from './Confirm'
+
 const Order = (props) => {
   const loaded = () => {
     let total = 0
@@ -122,7 +121,7 @@ const Order = (props) => {
           to='/order/confirm'
           onClick={() => props.handleConfirm()}
         >
-          {/* <button>Confrim Order</button> */}
+          <button className="confirm-order">Confirm Order</button>
         </Link>
       </div>
     );

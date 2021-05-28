@@ -19,8 +19,8 @@ const Menu = (props) => {
       <Link to="/products">
         <button className="search-bar">Search</button>
       </Link>
-      <div className="menu-main">
-        <div className="red-box"></div>
+      {/* <div className="menu-main"> */}
+        {/* <div className="red-box"></div> */}
         <div className="menu-btns">
           <Link
             to={"/products"}
@@ -72,7 +72,7 @@ const Menu = (props) => {
           </Link>
         </div>
         <div className='empty'></div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

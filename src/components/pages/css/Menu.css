@@ -1,9 +1,12 @@
 .menu-btns {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 100px;
-  margin-right: -50px;
+  /* justify-content: space-between; */
+  /* margin-top: 50px; */
+  margin-left: -50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
 }
 
 .icecreams-button {
@@ -12,7 +15,8 @@
   border-radius: 15px 100px;
   display: inline-block;
   position: relative;
-  left: 40px;
+  left: 60px;
+  top: 20px;
   margin-top: 30px;
   
   
@@ -24,7 +28,8 @@
   border-radius: 15px 100px;
   display: inline-block;
   position: relative;
-  left: 40px;
+  left: 60px;
+  top: 20px;
   margin-top: 30px;
 }
 
@@ -34,7 +39,8 @@
   border-radius: 15px 100px;
   display: inline-block;
   position: relative;
-  left: 40px;
+  left: 60px;
+  top: 20px;
   margin-top: 30px;
 }
 
@@ -46,10 +52,10 @@ body {
   background: #202327;
 } */
 
-.menu-main {
+/* .menu-main {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-}
+} */
 
 .menu-header {
   display: flex;
@@ -96,17 +102,6 @@ body {
   margin-top: 25px;
 } */
 
-.red-box {
-  width: 90px;
-  height: 370px;
-  background: red;
-  display: inline-block;
-  /* position: relative; */
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-top: 150px;
-  overflow: auto !important;
-}
 
 .button5 {
   border-radius: 50%;

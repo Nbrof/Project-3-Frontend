@@ -23,3 +23,13 @@
 .ic-name {
     margin-top: 15px;
 }
+.add-to-cart {
+    width: 140px;
+    margin-left: 80px;
+    background-color:#e74d4b;
+    color: white;
+    height: 25px;
+    border-radius: 2.5rem;
+    border: none;
+    font-size: 20px;
+}

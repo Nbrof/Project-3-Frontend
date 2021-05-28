@@ -3,9 +3,9 @@ import "./css/About.css";
 
 const About = (props) => {
   return (
-    <>
+    <div className='about-info'>
     <div className='about'>
-    <h1 className='neon-text'>About Page</h1>
+    <h1 className='neon-text-about'>About the Team</h1>
 
     
       <div className="team-img">
@@ -17,9 +17,9 @@ const About = (props) => {
             />
           </div>
           <div class="text">
-            <p>
+            <p className='text-color'>
               This is Christina. Christina's role in this project has been the
-              Full-Stack developer on the frontend. Creating components and
+              Full-Stack developer. Creating components and
               designing the app/website layout.
             </p>
           </div>
@@ -33,7 +33,7 @@ const About = (props) => {
             />
           </div>
           <div class="text">
-            <p>
+            <p className='text-color'>
               This is Chun! Chun's role as a Full-Stack Developer was huge in
               the frontend, and also had a hand in the backend structure.
               Creating routes and component with links to certain pages.
@@ -49,7 +49,7 @@ const About = (props) => {
             />
           </div>
           <div class="text">
-            <p>
+            <p className='text-color'>
               This is Gabe! Gabe built models on the backend and has a role on
               the frontend styling and components.
             </p>
@@ -64,7 +64,7 @@ const About = (props) => {
             />
           </div>
           <div class="text">
-            <p>
+            <p className='text-color'>
               This is Nikolaus! Nikolaus has jumpstarted the team with the main
               layout of the components and deploying and making our app live.
             </p>
@@ -73,7 +73,7 @@ const About = (props) => {
 
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

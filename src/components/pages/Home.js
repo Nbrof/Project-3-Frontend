@@ -8,15 +8,17 @@ const Home = (props) => {
   const parlours = props.parlours.map((parlour, index) => {
     return (
       <div className="parlour" key={index}>
-        <Link 
-          to='/products'
-          onClick={() => props.handleFilter(props.iceCreams, 'all')}
+        <Link
+          to="/products"
+          onClick={() => props.handleFilter(props.iceCreams, "all")}
         >
           <img src={parlour.image} alt="parlour" />
-          <h2>{parlour.name}</h2>
-          <div className="rating">
-            <FontAwesomeIcon className="star" icon="star" />
-            <span>{parlour.rating.split('/')[0]/2}</span>
+          <div className="parlour-info">
+            <h2>{parlour.name}</h2>
+            <h3 className="rating">
+              <FontAwesomeIcon className="star" icon="star" />
+              <span>{parlour.rating.split("/")[0] / 2}</span>
+            </h3>
           </div>
         </Link>
       </div>
@@ -24,10 +26,18 @@ const Home = (props) => {
   });
 
   return (
-    <body className="home-bg2 home">
-      <h1>HOME</h1>
-      {parlours}
-    </body>
+    <div className="home-bg2 home">
+      <div className="home-header">
+        <h1 className="home-pars">HOME</h1>
+        <Link to={"/order"}>
+          <img
+            className="cart-2"
+            src="https://cdn4.iconfinder.com/data/icons/VISTA/business/png/400/shopping_cart.png"
+          />
+        </Link>
+      </div>
+      <div className="parlour-list">{parlours}</div>
+    </div>
   );
 };
 export default Home;

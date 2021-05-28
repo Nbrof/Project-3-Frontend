@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import '../App.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = (props) => {
   return (
+
     <nav>
       <div className='comp-btns'>
       <Link to="/menu">
@@ -19,6 +20,7 @@ const Footer = (props) => {
         <FontAwesomeIcon className='home-btn'icon="home" size="lg" />
         {/* <p>Home</p> */}
       </Link>
+      {/* <span className='circle'></span> */}
       <Link to="/profile">
         <FontAwesomeIcon className='profile-btn' icon="user" size="lg" />
         <p>Profile</p>

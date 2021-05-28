@@ -14,6 +14,7 @@ import Menu from "./components/pages/Menu";
 import More from "./components/pages/More";
 import Offer from "./components/pages/Offer";
 import Order from "./components/pages/Order";
+import Confirm from "./components/pages/Confirm"
 import Products from "./components/pages/Products";
 import ProductInfo from "./components/pages/ProductInfo";
 import Profile from "./components/pages/Profile";
@@ -29,9 +30,10 @@ function App() {
   const url = "https://project-3-seir-329.herokuapp.com";
   // const url = 'localhost:4000'
 
+  
+
   const [iceCreams, setIceCreams] = React.useState([]);
   const [iceCreamsArr, setIceCreamsArr] = React.useState([])
-  // const [iceCream, setIceCream] = React.useState({})
   const [signUps, setSignUps] = React.useState([])
   const [logIn, setLogIn] = React.useState({})
   const [parlours, setParlours] = React.useState([])
@@ -90,6 +92,7 @@ function App() {
         setSignUps(data)
       })
   }
+
 
   const getParlour = () => {
     fetch(url + "/parlour")
@@ -176,6 +179,8 @@ function App() {
   const handleConfirm = () => {
     setCart([])
   }
+
+  
 
 
   return (
@@ -320,7 +325,11 @@ function App() {
             path="/offer" 
             render={(rp) => (
               <div>
-                <Offer {...rp} />
+                <Offer 
+                  {...rp} 
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
                 <Footer />
               </div>
             )} />
@@ -369,8 +378,8 @@ function App() {
             path="/order/confirm" 
             render={(rp) => (
               <div>
-                <Order {...rp} />
-                <Footer />
+                <Confirm {...rp} />
+                {/* <Footer /> */}
               </div>
             )} />
         </Switch>
@@ -380,5 +389,9 @@ function App() {
     </div>
   );
 }
+
+
+
+
 
 export default App;

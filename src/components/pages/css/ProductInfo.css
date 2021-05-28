@@ -1,0 +1,35 @@
+.cart {
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+}
+
+.cart-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.pi-img {
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.neon-text-pi {
+    margin-top: 25px;
+}
+
+.ic-name {
+    margin-top: 15px;
+}
+.add-to-cart {
+    width: 140px;
+    margin-left: 80px;
+    background-color:#e74d4b;
+    color: white;
+    height: 25px;
+    border-radius: 2.5rem;
+    border: none;
+    font-size: 20px;
+}

@@ -1,6 +1,6 @@
 .christina {
     height: 115px;
-    width: 80px;
+    width: 85px;
     border: 1px solid white;
     max-width: 150%;
     border-radius: 15px;
@@ -9,7 +9,7 @@
 }
 .chun {
     height: 110px;
-    width: 120px; 
+    width: 90px; 
     border: 1px solid white;
     max-width: 150%;
     border-radius: 15px;
@@ -17,7 +17,7 @@
 }
 .gabe {
     height: 105px;
-    width: 80px;
+    width: 85px;
     border: 1px solid white;
     max-width: 150%;
     border-radius: 15px;
@@ -25,7 +25,7 @@
 }
 .nikolaus {
     height: 105px;
-    width: 80px;
+    width: 90px;
     border: 1px solid white;
     max-width: 150%;
     border-radius: 15px;
@@ -56,6 +56,91 @@
     background: none;
     margin-right: 50px;
     margin-bottom: 75px;
-
-
 }
+
+.neon-text-about {
+    margin-top: 25px;
+}
+
+.about-info {
+    background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/o_37/v1622003751/icecream_bg_pljiay.jpg');
+        background-repeat: no-repeat;
+        background-size: 1000px 100vh ;
+        background-position: top;
+        background-attachment: fixed;
+}
+
+.text-color {
+    color: black;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+   
+    .christina {
+        height: 115px;
+        width: 85px;
+        border: 1px solid white;
+        max-width: 150%;
+        border-radius: 15px;
+        margin-left: 55px;
+        
+    }
+    .chun {
+        height: 110px;
+        width: 90px; 
+        border: 1px solid white;
+        max-width: 150%;
+        border-radius: 15px;
+        margin-left: 65px;
+    }
+    .gabe {
+        height: 105px;
+        width: 85px;
+        border: 1px solid white;
+        max-width: 150%;
+        border-radius: 15px;
+        margin-right: 35px;
+    }
+    .nikolaus {
+        height: 105px;
+        width: 90px;
+        border: 1px solid white;
+        max-width: 150%;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .christina {
+        height: 115px;
+        width: 85px;
+        border: 1px solid white;
+        max-width: 150%;
+        border-radius: 15px;
+        margin-left: 25px;
+        
+    }
+
+    .gabe {
+        height: 105px;
+        width: 85px;
+        border: 1px solid white;
+        max-width: 150%;
+        border-radius: 15px;
+        margin-right: 85px;
+    }
+
+    .nikolaus {
+        height: 105px;
+        width: 90px;
+        border: 1px solid white;
+        max-width: 150%;
+        border-radius: 15px;
+        margin-right: 35px;
+    }
+    }
+

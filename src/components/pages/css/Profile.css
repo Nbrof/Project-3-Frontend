@@ -9,7 +9,7 @@
     font-size: 30px; 
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 /* img {
@@ -33,13 +33,13 @@
     background-attachment: fixed;
 }
 
-html {
+/* html {
     background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg');
     background-repeat: no-repeat;
     background-size: 1000px 100vh ;
     background-position: top;
     background-attachment: fixed;
-}
+} */
 
 .log-out-btn {
 margin-right: -5px;

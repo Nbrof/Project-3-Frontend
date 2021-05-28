@@ -19,7 +19,7 @@ const About = (props) => {
           <div class="text">
             <p className='text-color'>
               This is Christina. Christina's role in this project has been the
-              Full-Stack developer on the frontend. Creating components and
+              Full-Stack developer. Creating components and
               designing the app/website layout.
             </p>
           </div>

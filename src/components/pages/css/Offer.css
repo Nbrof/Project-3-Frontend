@@ -78,3 +78,58 @@ margin-top: 10px;
     justify-content: left;
     margin-left: 40px;
 }
+
+@media screen and (min-width: 768px) {
+
+    .star {
+        color: red;
+        text-align: left;
+        margin-left: 210px;
+        padding-top: 10px;
+    }
+    .star::after {
+        content:" (154 ratings) Cafe";
+        color: gray;
+    }
+
+    .floats {
+        margin-top: 60px;
+        display: flex;
+        justify-content: left;
+        margin-left: 210px;
+    }
+
+    .ice-cream2 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: left;
+        margin-left: 210px;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .star {
+            color: red;
+            text-align: left;
+            margin-left: 330px;
+            padding-top: 10px;
+        }
+        .star::after {
+            content:" (154 ratings) Cafe";
+            color: gray;
+        }
+    
+        .floats {
+            margin-top: 60px;
+            display: flex;
+            justify-content: left;
+            margin-left: 330px;
+        }
+    
+        .ice-cream2 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: left;
+            margin-left: 330px;
+        }
+    }
+}

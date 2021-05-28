@@ -57,7 +57,7 @@ const Menu = (props) => {
         </Link>
 
         <Link
-          to={"/products"}
+          to={"/home"}
           onClick={() => handleFilter(iceCreams, "ice cream")}
         >
           <img

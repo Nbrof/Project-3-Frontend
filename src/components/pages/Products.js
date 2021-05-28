@@ -17,7 +17,7 @@ const Product = (props) => {
             to={`/products/${product.name}`}
             // onClick={() => handleClick(product)}
           >
-              <img src={product.img} alt='ice cream' />
+              <img className='icecream-img' src={product.img} alt='ice cream' />
               <h4 className="product-rating">
                 <FontAwesomeIcon className="star-rating" icon={["fas", 'star']}/> {product.rating.split('/')[0]/2}
               </h4>

@@ -44,7 +44,7 @@ const Profile = (props) => {
     
   return (
     // IMAGE
-    <body className='bg-image'>
+    <body className='bg-image profile'>
   
     {/* Logo */}
     <h1 className='frizz-logo'>FR<img className='i-frizz' src='https://cdn0.iconfinder.com/data/icons/city-park-flat/512/0_City_Park-05-512.png' />ZZY</h1>

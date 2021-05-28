@@ -73,7 +73,7 @@ function Order(props) {
       content={<>
         <b>Thank you for your Order</b>
 
-        <img src='https://res.cloudinary.com/dvxvez8mj/image/upload/v1622154473/Project%203/confirm_image_jshihg.png' alt=''/>
+        <img className='confirmation' src='https://res.cloudinary.com/dvxvez8mj/image/upload/v1622154473/Project%203/confirm_image_jshihg.png' alt=''/>
 
         <p>Your order is now being processed.  We will let you know once the order is picked up from the outlet.  Check the status of your order!</p>
         <Link to='/home'>

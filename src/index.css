@@ -21,39 +21,38 @@ justify-content:space-evenly;
 position: absolute;
 width: 100vw;
 bottom: 0px;
-  background-image: url('https://cdn1.vectorstock.com/i/1000x1000/40/25/dark-gray-background-vector-1804025.jpg');
+background-color: black;
+  /* background-image: url('https://cdn1.vectorstock.com/i/1000x1000/40/25/dark-gray-background-vector-1804025.jpg');
       background-repeat: no-repeat;
       background-size: 1000px 100vh ;
       background-position: top;
-      background-attachment: fixed;
+      background-attachment: fixed; */
 
 }
 
 .home-btn {
   color: #e84e4c;
   font-size: 50px;
-  margin-bottom: 30px;
-  margin-left: 20px;
 }
 
 .menu-btn {
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .offer-btn {
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .profile-btn {
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .more-btn {
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 p {
@@ -248,9 +247,9 @@ button:hover {
   font-size: 18px;
 }
 .red-text {
- color: #e84e4c;
- font-weight: 900;
- text-decoration: none;
+  color: #e84e4c;
+  font-weight: 900;
+  text-decoration: none;
 }
 .signup {
   display: flex;
@@ -309,17 +308,20 @@ a {
   background-repeat: no-repeat;
 } */
 
-.create {
+/* .create {
   margin-top: 180px;
-}
+} */
 
 h2 {
   color: white;
 }
 
 .about, .home, .menu, .more, .offer, .order, .product-info, .products, .profile {
-  height: calc(100vh - 42.8px);
+  height: calc(100vh - 52.3px);
+  max-width: 1000px;
+  margin: 0 auto;
   overflow-y: auto;
+
 }
 
 /* TABLET */

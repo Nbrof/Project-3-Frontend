@@ -20,7 +20,7 @@ const Footer = (props) => {
         <FontAwesomeIcon className='home-btn'icon="home" size="lg" />
         {/* <p>Home</p> */}
       </Link>
-      <span className='circle'></span>
+      {/* <span className='circle'></span> */}
       <Link to="/profile">
         <FontAwesomeIcon className='profile-btn' icon="user" size="lg" />
         <p>Profile</p>

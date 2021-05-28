@@ -1,12 +1,397 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Route, Link, Switch } from "react-router-dom";
+import Form from "./Form";
+import Display from "./Display";
+import Signup from "./forms/Signup";
+import Login from "./forms/Login";
+import Footer from "./components/Footer";
+
+import Default from "./components/pages/Default"
+import About from "./components/pages/About";
+import Home from "./components/pages/Home";
+import Menu from "./components/pages/Menu";
+import More from "./components/pages/More";
+import Offer from "./components/pages/Offer";
+import Order from "./components/pages/Order";
+import Confirm from "./components/pages/Confirm"
+import Products from "./components/pages/Products";
+import ProductInfo from "./components/pages/ProductInfo";
+import Profile from "./components/pages/Profile";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+
+library.add(fas, far, fab);
 
 function App() {
+  const url = "https://project-3-seir-329.herokuapp.com";
+  // const url = 'localhost:4000'
+
+  
+
+  const [iceCreams, setIceCreams] = React.useState([]);
+  const [iceCreamsArr, setIceCreamsArr] = React.useState([])
+  const [signUps, setSignUps] = React.useState([])
+  const [logIn, setLogIn] = React.useState({})
+  const [parlours, setParlours] = React.useState([])
+  const [cart, setCart] = React.useState([])
+
+  const emptyIceCream = {
+    name: "",
+    type: "",
+    dairy: "",
+    toppings: "",
+    description: "",
+    img: "",
+    price: "",
+    rating: "",
+  };
+
+  const emptyLogin = {
+    email: "",
+    pass: "",
+  };
+
+  const emptySignup = {
+    name: "",
+    pass: "",
+    email: "",
+    address: "",
+  };
+
+  const [selectedIceCream, setSelectedIceCream] = React.useState(emptyIceCream);
+
+  const [selectedLogin, setSelectedLogin] = React.useState(emptyLogin);
+
+  const [selectedSignup, setSelectedSignup] = React.useState(emptySignup);
+
+  const getIceCream = () => {
+    fetch(url + "/icecream/")
+      .then((response) => response.json())
+      .then((data) => {
+        setIceCreams(data);
+        setIceCreamsArr(data);
+      });
+  };
+
+  const getSignUp = () => {
+    fetch(url + "/signup/")
+      .then((response) => response.json())
+      .then((data) => {
+        setSignUps(data)
+      })
+  }
+
+  const getLogIn = () => {
+    fetch(url + "/login/")
+      .then((response) => response.json())
+      .then((data) => {
+        setSignUps(data)
+      })
+  }
+
+
+  const getParlour = () => {
+    fetch(url + "/parlour")
+      .then((response) => response.json())
+      .then((data) => {
+        setParlours(data)
+      })
+  }
+
+  const handleLogin = (login) => {
+    setLogIn(login)
+  }
+
+  React.useEffect(() => {getIceCream()}, []);
+
+  React.useEffect(() => {getSignUp()}, [])
+
+  React.useEffect(() => {getLogIn()}, [])
+
+  React.useEffect(() => getParlour(), [])
+
+  console.log(parlours)
+
+  const handleFilter = (arr, filter) => {
+    if (filter === "all") {
+      setIceCreams(iceCreamsArr)
+    } else if (filter === "ice cream") {
+      const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() !== "float")
+      setIceCreams(iceCreamsFilter)
+    } else {
+      const iceCreamsFilter = arr.filter((item) => item.type.toLowerCase() === filter)
+      setIceCreams(iceCreamsFilter)
+    }
+  }
+
+  // const handleClick = (item) => {
+  //   setIceCream(item)
+  // }
+
+  const handleCreate = (newIceCream) => {
+    fetch(url + "/icecream", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newIceCream),
+    }).then(() => getIceCream(2));
+  };
+
+  const handleUpdate = (icecream) => {
+    fetch(url + "/icecream/" + icecream._id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(icecream),
+    }).then(() => getIceCream());
+  };
+
+  const selectIceCream = (icecream) => {
+    setSelectedIceCream(icecream);
+  };
+
+  const selectLogin = (login) => {
+    setSelectedLogin(login);
+  };
+
+  const selectSignup = (signup) => {
+    setSelectedSignup(signup);
+  };
+
+  const deleteIceCream = (icecream) => {
+    fetch(url + "/icecream/" + icecream._id, {
+      method: "DELETE",
+    }).then(() => {
+      getIceCream();
+    });
+  };
+
+  const handleAdd = (item) => {
+    setCart([...cart, item])
+  }
+
+  const handleConfirm = () => {
+    setCart([])
+  }
+
+  
+
+
   return (
     <div className="App">
-     <h1> Hi!</h1>
+      {/* <img src='https://res.cloudinary.com/dejg3dz16/image/upload/v1621912001/Screen_Shot_2021-05-24_at_9.59.14_PM_ta2eju.png' alt='frizz background' /> */}
+
+
+      {/* <Link to="create">
+        <button className="create">Add Ice Cream</button>
+      </Link> */}
+
+      <main>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(rp) => (
+              // <div>
+              //   <Link to="signup">
+              //     <button className="btns">Sign Up</button>
+              //   </Link>
+              //   <Link to="login">
+              //     <button className="btns">Log In</button>
+              //   </Link>
+              // </div>
+
+              <Default />
+
+              // <Display
+              //   {...rp}
+              //   icecreams={icecreams}
+              //   selectIceCream={selectIceCream}
+              //   deleteIceCream={deleteIceCream}
+              // />
+            )}
+          />
+          <Route
+            exact
+            path="/create"
+            render={(rp) => (
+              <Form
+                {...rp}
+                label="create"
+                icecream={emptyIceCream}
+                handleSubmit={handleCreate}
+              />
+            )}
+          />
+
+          <Route
+            exact
+            path="/edit"
+            render={(rp) => (
+              <Form
+                {...rp}
+                label="update"
+                icecream={selectedIceCream}
+                handleSubmit={handleUpdate}
+              />
+            )}
+          />
+
+          <Route
+            exact
+            path="/signup"
+            render={(rp) => (
+              <Signup
+                {...rp}
+                label="signup"
+                signup={emptySignup}
+                handleSubmit={handleCreate}
+              />
+            )}
+          />
+
+          <Route
+            exact
+            path="/login"
+            render={(rp) => (
+              <Login
+                {...rp}
+                label="login"
+                login={emptyLogin}
+                handleSubmit={handleUpdate}
+              />
+            )}
+          />
+          <Route 
+            exact 
+            path="/home" 
+            render={(rp) => (
+              <div>
+                <Home 
+                  {...rp} 
+                  parlours={parlours}
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
+                <Footer/>
+              </div>
+              )} />
+          <Route 
+            exact 
+            path="/menu" 
+            render={(rp) => (
+              <div>
+                <Menu 
+                  {...rp} 
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
+                <Footer />
+              </div>
+            )} />
+          <Route 
+            exact 
+            path="/products" 
+            render={(rp) => (
+              <div>
+                <Products
+                  {...rp} 
+                  iceCreams={iceCreams}
+                  // handleClick={handleClick}
+                />
+                <Footer />
+              </div>
+            )} />
+          <Route
+            exact
+            path="/products/:product"
+            render={(rp) => (
+              <div>
+                <ProductInfo 
+                  {...rp} 
+                  handleAdd={handleAdd}
+                />
+                <Footer />
+              </div>
+            )} />
+          <Route 
+            exact 
+            path="/offer" 
+            render={(rp) => (
+              <div>
+                <Offer 
+                  {...rp} 
+                  iceCreams={iceCreamsArr}
+                  handleFilter={handleFilter}
+                />
+                <Footer />
+              </div>
+            )} />
+          <Route 
+            exact 
+            path="/more" 
+            render={(rp) => (
+              <div>
+                <More {...rp} />
+                <Footer />
+              </div>
+            )} />
+          <Route 
+            exact 
+            path="/profile" 
+            render={(rp) => (
+              <div>
+                <Profile {...rp} />
+                <Footer />
+              </div>
+            )} />
+          <Route 
+            exact 
+            path="/about" 
+            render={(rp) => (
+              <div>
+                <About {...rp} />
+                <Footer />
+              </div>
+            )} />
+          <Route 
+            exact 
+            path="/order" 
+            render={(rp) => (
+              <div>
+                <Order 
+                  {...rp} 
+                  cart={cart}
+                  handleConfirm={handleConfirm}
+                />
+                <Footer />
+              </div>
+            )} />
+            <Route 
+            exact 
+            path="/order/confirm" 
+            render={(rp) => (
+              <div>
+                <Confirm {...rp} />
+                {/* <Footer /> */}
+              </div>
+            )} />
+        </Switch>
+      </main>
+
+      {/* <Footer /> */}
     </div>
   );
 }
+
+
+
+
 
 export default App;

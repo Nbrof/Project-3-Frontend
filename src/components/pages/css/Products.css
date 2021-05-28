@@ -1,0 +1,41 @@
+.ice-cream {
+    /* border: 4px solid #e84e4c; */
+    border-radius: 2.5rem;
+    height: 300px;
+    width: 300px;
+    /* margin-left: 93px; */
+    margin: 20px auto;
+}
+.ice-cream:hover {
+    /* border: 4px solid #e84e4c; */
+    border-radius: 2.5rem;
+    height: 300px;
+    width: 300px;
+    /* margin-left: 93px; */
+    /* margin-top: 20px; */
+    box-shadow:
+      0 0 2px #fff,
+      0 0 5px #e74d4b,
+      0 0 11px #e74d4b,
+      0 0 22px #e74d4b,
+      0 0 42px #e74d4b,
+      0 0 62px #e74d4b,
+      0 0 702px #e74d4b,
+      0 0 851px #e74d4b;
+}
+.icecream-img {
+    height: 303px;
+    width: 300px;
+    border-radius: 2.5rem;
+}
+.product-name{
+   margin-bottom: 20px;
+   margin-top: 100px;
+}
+.product-rating {
+   margin-right:40px
+}
+.star-rating {
+ color: red;
+ margin-left: 10px;
+}

@@ -1,0 +1,51 @@
+.i-frizz {
+    height: 60px;
+    width: 45px;
+    display: flex;
+    
+}
+
+.frizz-logo {
+    font-size: 30px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* img {
+    margin: -2px;
+} */
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    margin: 50px auto 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bg-image {
+    background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg');
+    background-repeat: no-repeat;
+    background-size: 1000px 100vh ;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+/* html {
+    background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg');
+    background-repeat: no-repeat;
+    background-size: 1000px 100vh ;
+    background-position: top;
+    background-attachment: fixed;
+} */
+
+.log-out-btn {
+margin-right: -5px;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}

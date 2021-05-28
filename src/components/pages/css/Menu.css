@@ -1,0 +1,145 @@
+.menu-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-right: -50px;
+}
+
+.icecreams-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px 100px;
+  display: inline-block;
+  position: relative;
+  left: 40px;
+  margin-top: 30px;
+  
+  
+}
+
+.floats-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px 100px;
+  display: inline-block;
+  position: relative;
+  left: 40px;
+  margin-top: 30px;
+}
+
+.offer-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px 100px;
+  display: inline-block;
+  position: relative;
+  left: 40px;
+  margin-top: 30px;
+}
+
+body {
+  background: #202327;
+}
+
+/* html {
+  background: #202327;
+} */
+
+.menu-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: end;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.icecream-btn {
+  height: 65px;
+  width: 300px;
+  background: white;
+  border: none;
+  margin-top: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.floats-btn {
+  height: 65px;
+  width: 300px;
+  background: white;
+  border: none;
+  margin-top: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.offer-btn2 {
+  height: 65px;
+  width: 300px;
+  background: white;
+  border: none;
+  margin-top: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  /* background-image: linear-gradient(to bottom, white, #f34747); */
+}
+
+/* img {
+  margin-left: 50px;
+  margin-top: 25px;
+} */
+
+.red-box {
+  width: 90px;
+  height: 370px;
+  background: red;
+  display: inline-block;
+  /* position: relative; */
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 150px;
+  overflow: auto !important;
+}
+
+.button5 {
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  /* display: inline-block; */
+  position: relative;
+  margin-left: -15px;
+  margin-top: 40px;
+  color: red;
+}
+
+/* .comp-btns {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+
+.search-bar {
+  height: 30px;
+  width: 350px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.cart-2 {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.menu-header2 {
+  display: flex;
+  justify-content: space-between;
+}

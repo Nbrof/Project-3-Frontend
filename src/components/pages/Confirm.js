@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "./css/Order.css";
+import "./css/Confirm.css";
 
 const Confirm = (props) => {
   return (
@@ -25,7 +25,7 @@ const Confirm = (props) => {
         is picked from the outlet. Check the status of your Order
       </p>
       <Link to="/home">
-        <button>Back to Home</button>
+        <button className="confirm-btn">Back to Home</button>
       </Link>
     </div>
   );

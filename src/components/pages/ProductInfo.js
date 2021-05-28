@@ -38,7 +38,7 @@ const ProductInfo = (props) => {
         <h4>Description: {iceCream.description}</h4>
         <h4>$ {iceCream.price}</h4>
         <div className='cart-img'>
-        <button onClick={() => props.handleAdd(iceCream)}>Add to Cart</button>
+        <button className="add-to-cart" onClick={() => props.handleAdd(iceCream)}>Add to Cart</button>
         <Link to={'/order'}><img className='cart' src='https://cdn4.iconfinder.com/data/icons/VISTA/business/png/400/shopping_cart.png'/></Link>
         </div>
 

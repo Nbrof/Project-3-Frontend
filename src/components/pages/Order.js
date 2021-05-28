@@ -121,7 +121,7 @@ const Order = (props) => {
           to='/order/confirm'
           onClick={() => props.handleConfirm()}
         >
-          <button>Confrim Order</button>
+          <button className="confirm-order">Confirm Order</button>
         </Link>
       </div>
     );

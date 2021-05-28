@@ -1,7 +1,10 @@
 .i-frizz-default {
     /* margin-top: 500px; */
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 90px;
+    position: relative;
+    left: 163px;
+    top: 125px;
 }
 
 
@@ -48,7 +51,8 @@ font-weight: 600;
 .logo {
    position: relative;
    top: 200px;
-   font-size: 100px ;
+   font-size:75px ;
+   letter-spacing: 30px;
 }
 
 
@@ -59,7 +63,7 @@ font-weight: 600;
     /* background-size: 700px 700px; */
     background-position: top;
     background-attachment: fixed;
-    background-size: 525px 1520px;
+    background-size: 525px 1920px;
     /* opacity: .02; */
     
 }

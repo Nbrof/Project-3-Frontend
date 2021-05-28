@@ -12,12 +12,12 @@ const Default = (props) => {
       <div className="logo-grp"></div>
       <h1 className="logo">
         FR
+        ZZY
+      </h1>
         <img
           className="i-frizz-default"
           src="https://cdn0.iconfinder.com/data/icons/city-park-flat/512/0_City_Park-05-512.png"
         />
-        ZZY
-      </h1>
       <p className="default-p">Discover the best</p>
       <p className="default-p">flavored ice-cream</p>
       <p className="default-p">and have access to fast</p>

@@ -56,6 +56,20 @@
     background: none;
     margin-right: 50px;
     margin-bottom: 75px;
+}
 
+.neon-text-about {
+    margin-top: 25px;
+}
 
+.about-info {
+    background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/o_37/v1622003751/icecream_bg_pljiay.jpg');
+        background-repeat: no-repeat;
+        background-size: 1000px 100vh ;
+        background-position: top;
+        background-attachment: fixed;
+}
+
+.text-color {
+    color: black;
 }

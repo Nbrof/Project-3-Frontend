@@ -27,7 +27,7 @@ const Home = (props) => {
 
   return (
     <div className="home-bg2 home">
-      <h1>HOME</h1>
+      <h1 className='home-pars'>HOME</h1>
       <div className='parlour-list'>
         {parlours}
       </div>

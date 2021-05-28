@@ -9,7 +9,13 @@ const Menu = (props) => {
   return (
     <div className='menu'>
 
-      <h1 className="menu-header neon-text">Menu Page</h1>
+<div className='menu-header2'>
+      <h1 className="menu-header">Menu Page</h1>
+      <Link to={'/order'}><img className='cart-2' src='https://cdn4.iconfinder.com/data/icons/VISTA/business/png/400/shopping_cart.png'/></Link>
+</div>
+      <Link to='/products'>
+        <button className='search-bar'>Search</button>
+      </Link>
 
       <div className="menu-btns">
         <div className="red-box"></div>
@@ -49,6 +55,21 @@ const Menu = (props) => {
           <button className="offer-btn2">Offers</button>
           <button class="button button5">&#62;</button>
         </Link>
+
+        <Link 
+          to={"/products"}
+          onClick={() => handleFilter(iceCreams, "ice cream")}
+        >
+          <img
+            className="icecreams-button"
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Venice_-_Ice_cream_parlor_-_4017.jpg"
+            alt="parlours"
+          />
+          <button className="icecream-btn">Parlours</button>
+          <button class="button button5">&#62;</button>
+        </Link>
+
+
       </div>
     </div>
   );

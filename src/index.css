@@ -20,28 +20,40 @@ display: flex;
 justify-content:space-evenly;
 position: absolute;
 width: 100vw;
-bottom: 0px
+bottom: 0px;
+  background-image: url('https://cdn1.vectorstock.com/i/1000x1000/40/25/dark-gray-background-vector-1804025.jpg');
+      background-repeat: no-repeat;
+      background-size: 1000px 100vh ;
+      background-position: top;
+      background-attachment: fixed;
+
 }
 
 .home-btn {
   color: #e84e4c;
-  font-size: 40px;
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-left: 20px;
 }
 
 .menu-btn {
   color: white;
+  margin-top: 20px;
 }
 
 .offer-btn {
   color: white;
+  margin-top: 20px;
 }
 
 .profile-btn {
   color: white;
+  margin-top: 20px;
 }
 
 .more-btn {
   color: white;
+  margin-top: 20px;
 }
 
 p {
@@ -267,6 +279,7 @@ input {
 a {
   text-decoration: none;
 }
+
 
 .neon-text {
     color: #fff;

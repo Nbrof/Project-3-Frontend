@@ -30,6 +30,8 @@ function App() {
   const url = "https://project-3-seir-329.herokuapp.com";
   // const url = 'localhost:4000'
 
+  
+
   const [iceCreams, setIceCreams] = React.useState([]);
   const [iceCreamsArr, setIceCreamsArr] = React.useState([])
   const [signUps, setSignUps] = React.useState([])
@@ -177,6 +179,8 @@ function App() {
   const handleConfirm = () => {
     setCart([])
   }
+
+  
 
 
   return (
@@ -385,5 +389,9 @@ function App() {
     </div>
   );
 }
+
+
+
+
 
 export default App;

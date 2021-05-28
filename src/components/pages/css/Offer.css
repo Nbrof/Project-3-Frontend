@@ -1,19 +1,23 @@
 .icecream-month {
     height:200px;
     width: 350px;
-    margin-left: -5px;
+    margin-left: 28px;
     border: 2px solid white;
     border-radius: 10px;
     margin-top: 5px;
 }
 
 .month-txt {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-top: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .month-txt2 {
     margin-bottom: 80px;
+    margin-top: 15px;
+    margin-right: 45px;
+    margin-left: 45px;
 }
 
 .pop-fla {

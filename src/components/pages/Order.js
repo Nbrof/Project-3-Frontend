@@ -1,9 +1,13 @@
-import React from "react";
-import './css/Order.css'
-import {Link} from 'react-router-dom'
+// POPUP PAGE
 
-const Order = (props) => {
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Confirm from './Confirm';
+import "./css/Order.css";
 
+
+
+function Order(props) {
 
   const loaded = () => {
     let total = 0
@@ -16,9 +20,18 @@ const Order = (props) => {
         </div>
       );
     });
+    
+    
     return (
-      <div className="order">
+      <>
+      <div className="order2">
         <h1 className="neon-text">Order Page</h1>
+        <h4>Empty Cart</h4>
+      </div>
+
+      <div className="order">
+        {/* <h1 className="neon-text">Order Page</h1>
+        <h4>Empty Cart</h4> */}
         <div className='order-list'>
           {order}
           <hr/>
@@ -31,23 +44,46 @@ const Order = (props) => {
           to='/order/confirm'
           onClick={() => props.handleConfirm()}
         >
-          <button>Confrim Order</button>
+          <button>Confirm Order</button>
         </Link>
         
       </div>
+      </>
     );
   };
 
-  const loading = () => {
-    return (
-      <div className="order">
-        <h1 className="neon-text">Order Page</h1>
-        <h4>Empty Cart</h4>
-      </div>
-    );
-  };
+  
+  
+  
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
 
-  return props.cart.length > 0 ? loaded() : loading()
+ 
+  return <div>
+    <input
+      type="button"
+      value="Place Order"
+      onClick={togglePopup}
+    />
+    {/* <p className='order-body'>Items in Cart</p> */}
+    {isOpen && <Confirm
+      content={<>
+        <b>Thank you for your Order</b>
+
+        <img src='https://res.cloudinary.com/dvxvez8mj/image/upload/v1622154473/Project%203/confirm_image_jshihg.png' alt=''/>
+
+        <p>Your order is now being processed.  We will let you know once the order is picked up from the outlet.  Check the status of your order!</p>
+        <Link to='/home'>
+        <button>Back to Home</button>
+      </Link>
+      </>}
+      handleClose={togglePopup}
+    />}
+  </div>
+
 };
-
+ 
 export default Order;

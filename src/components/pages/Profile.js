@@ -44,7 +44,7 @@ const Profile = (props) => {
     
   return (
     // IMAGE
-    <div className='bg-image profile'>
+    <body className='bg-image'>
   
     {/* Logo */}
     <h1 className='frizz-logo'>FR<img className='i-frizz' src='https://cdn0.iconfinder.com/data/icons/city-park-flat/512/0_City_Park-05-512.png' />ZZY</h1>
@@ -55,7 +55,7 @@ const Profile = (props) => {
     <article className='static-info'>
     <h4>name: Emma Jones</h4>
     <h4>email: youremail@nomail.com</h4>
-    <h4>123 Hibiscus Cone Dr.</h4>
+    <h4>address: 123 Hibiscus Cone Dr.</h4>
     <h4>Ice Cream, DE 12345</h4>
     </article>
     
@@ -77,7 +77,7 @@ const Profile = (props) => {
       </span>
 
       {/* IMAGE body */}
-    </div>
+    </body>
 
   )
 }

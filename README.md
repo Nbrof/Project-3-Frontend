@@ -47,8 +47,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | Component Styling| M | 2hrs|3hrs| 
 | Bug Fixes | H | 2.5hrs|3hrs| 
 | Total Frontend | H | 31.5hrs|34hrs|  
-
-| Total | H | 51.5hrs|  | 
+| Total | H | 51.5hrs| 54.5hrs | 
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 

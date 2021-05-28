@@ -1,51 +1,60 @@
-.home-bg2  {
-        background-image: url('https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg');
-        background-repeat: no-repeat;
-        background-size: 1000px 100vh ;
-        background-position: top;
-        background-attachment: fixed;
+.home-bg2 {
+  background-image: url("https://res.cloudinary.com/dejg3dz16/image/upload/v1622091710/two-chocolate-chip-raspberry-ice-cream-cones-with-melted-splash-against-black-background-overhead-view-ISF23056_jyxht6.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px 100vh;
+  background-position: top;
+  background-attachment: fixed;
 }
 
+.home-header {
+  display: flex;
+  justify-content: space-between;
+}
 
+.cart-2 {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
 
 .parlour-list {
-        max-width: 600px;
-        width: 100vw;
-        margin: 40px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  max-width: 600px;
+  width: 100vw;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .parlour-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px 40px;
 }
 
 .parlour img {
-        height: 300px;
-        width: 100vw;
-        max-width: 600px;
-        border-radius: 2.5em;
+  height: 300px;
+  width: 100vw;
+  max-width: 600px;
+  border-radius: 2.5em;
 }
 
-
 .rating .star {
-        margin:0;
-        padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .rating span {
-        color: white;
-        margin-left: 5px;
+  color: white;
+  margin-left: 5px;
 }
 
 .home-pars {
-        display: flex;
-        justify-content: end;
-        margin-left: 15px;
-        margin-top: 15px;
-        font-size: 20px;
+  display: flex;
+  justify-content: end;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 20px;
 }

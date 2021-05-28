@@ -3,24 +3,27 @@ import { Link } from "react-router-dom";
 import "./css/Menu.css";
 
 const Menu = (props) => {
-
-  const {iceCreams, handleFilter} = props
+  const { iceCreams, handleFilter } = props;
 
   return (
-    <div className='menu'>
-
-<div className='menu-header2'>
-      <h1 className="menu-header">Menu Page</h1>
-      <Link to={'/order'}><img className='cart-2' src='https://cdn4.iconfinder.com/data/icons/VISTA/business/png/400/shopping_cart.png'/></Link>
-</div>
-      <Link to='/products'>
-        <button className='search-bar'>Search</button>
+    <div className="menu">
+      <div className="menu-header2">
+        <h1 className="menu-header">Menu</h1>
+        <Link to={"/order"}>
+          <img
+            className="cart-2"
+            src="https://cdn4.iconfinder.com/data/icons/VISTA/business/png/400/shopping_cart.png"
+          />
+        </Link>
+      </div>
+      <Link to="/products">
+        <button className="search-bar">Search</button>
       </Link>
 
       <div className="menu-btns">
         <div className="red-box"></div>
 
-        <Link 
+        <Link
           to={"/products"}
           onClick={() => handleFilter(iceCreams, "ice cream")}
         >
@@ -33,10 +36,7 @@ const Menu = (props) => {
           <button class="button button5">&#62;</button>
         </Link>
 
-        <Link 
-          to={"/products"}
-          onClick={() => handleFilter(iceCreams, "float")}
-        >
+        <Link to={"/products"} onClick={() => handleFilter(iceCreams, "float")}>
           <img
             className="floats-button"
             src="https://res.cloudinary.com/dejg3dz16/image/upload/v1621963185/4be670890df07c2cba3d457fb162edb1--soda-drink-strawberry-ice-cream-cake_q4luze.jpg"
@@ -56,7 +56,7 @@ const Menu = (props) => {
           <button class="button button5">&#62;</button>
         </Link>
 
-        <Link 
+        <Link
           to={"/products"}
           onClick={() => handleFilter(iceCreams, "ice cream")}
         >
@@ -68,8 +68,6 @@ const Menu = (props) => {
           <button className="icecream-btn">Parlours</button>
           <button class="button button5">&#62;</button>
         </Link>
-
-
       </div>
     </div>
   );

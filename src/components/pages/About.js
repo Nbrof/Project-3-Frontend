@@ -3,7 +3,7 @@ import "./css/About.css";
 
 const About = (props) => {
   return (
-    <body className='about-info'>
+    <div className='about-info'>
     <div className='about'>
     <h1 className='neon-text-about'>About the Team</h1>
 
@@ -73,7 +73,7 @@ const About = (props) => {
 
       </div>
     </div>
-    </body>
+    </div>
   );
 };
 

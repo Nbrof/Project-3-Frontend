@@ -5,7 +5,7 @@ import './css/More.css'
 
 const More = (props) => {
   return (
-    <body className='more-body'>
+    <div className='more-body'>
     <div className='more'>
       <h1 className='neon-text-more'>More</h1>
       <div className='about-more'>
@@ -26,7 +26,7 @@ const More = (props) => {
       </Link>
       </div>
     </div>
-    </body>
+    </div>
   )
 }
 
